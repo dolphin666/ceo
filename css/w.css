@@ -1,0 +1,891 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-17 09:30:32
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-17 11:06:58
+*/
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+.navbar-nav {
+	/* margin-top: -100px; */
+}
+
+/* 	.navbar-toggle {
+	margin-top: -25px;
+	margin-right:-107px; 
+} */
+/* .top {
+	width: 420px;
+} */
+/* .swipe_d.{
+	width: 380px;
+} */
+
+
+
+
+.nva_q .Logo {
+	position: absolute;
+	top: -0.17rem;
+	left: 0.84rem;
+	cursor: pointer;
+	width: 0.6rem;
+	height: 0.68rem;
+}
+
+.nav_font {
+	width: 4.2rem;
+}
+.top .top_left {
+	margin-left: -164px;
+}
+
+.nva_q {
+	position: absolute;
+	z-index: 100;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.navbar-nav {
+	margin: 0;
+}
+
+.nva_q ul {
+	width: 188px;
+	/* margin-left: 30%; */
+	margin-top: -28px;
+}
+ul.nav.navbar-nav li {
+	margin-right: 0%;
+}
+/* .nva_q ul li {
+	text-align: center;
+}
+ */
+ul.nav.navbar-nav li a {
+	font-size: 8px;
+}
+
+
+
+
+/* 轮播图 */
+
+.swipe_d {
+	position: relative;
+	margin-top: 0;
+}
+
+.carousel-inner {
+	overflow: visible;
+}
+
+.carousel {
+	border: none;
+}
+
+.swipe_nav_q {
+	width: 100%;
+	background-color: #262831;
+	/* margin-top: 10px; */
+	line-height: 65px;
+
+}
+
+
+.img_yd img {
+	width: 100%;
+
+}
+
+ol, ul {
+	margin-top: 0;
+    margin-bottom: 0px;
+}
+
+
+.row {
+	margin-left: -18px;
+	text-align: center;
+	color: #fff;
+	font-size: 2px;
+	font-family: "苹方";
+	margin-right: 232px;
+}
+.col-md-3 {
+	width: 12%;
+	float: left;
+}
+
+.swipe_nav {
+	margin: 0 auto;
+	width: 1160px;
+	height: 65px;
+}
+.row span {
+	cursor: pointer;
+}
+
+.swipe_nav_q .row .one:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .two:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .three:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .four:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+.swipe_nav_q .active {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+/* 下载 */
+.download {
+	width: 100%;
+	/* height: 760px; */
+
+	background: url('../img/背景.png') no-repeat;
+	/* overflow: hidden; */
+	background-size: cover;
+	
+}
+
+.download_c {
+	margin: auto;
+	width: 90%;
+	position: relative;
+}
+
+.download_c .phone {
+	margin-top: 20px;
+	/* background-size: cover; */
+	margin-left: 4%; 
+	height: 160px;
+}
+
+.download_c .download_r {
+	position: absolute;
+	top: 25px;
+	/* left: 540px;  */
+	right: 0%;
+	float: right;
+	padding-bottom: 40px;
+}
+
+.download_r .app {
+	width: 140px;
+	height: 25px;
+	border: 2px solid #fff;
+	border-radius: 12.5px;
+	color: #fff;
+	font-family: "苹方";
+	font-size: 4px;
+	line-height: 21px;
+	text-align: center;
+	font-weight: 600;
+}
+.download_r .app:hover{
+	cursor: pointer;
+}
+
+.download_r .describe {
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.download_r .QR_code {
+	margin-top: 4%;
+	margin-left: 29%;
+	width: 50px;
+}
+.download_r .ios {
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 20px;
+	width: 60px;
+	height: 50px;
+}
+.download_r .Android {
+	display: inline-block;
+	margin-top: 8px;
+	width: 60px;
+	height: 50px;
+
+}
+.download_r .ios,.Android:hover{
+	cursor: pointer;
+}
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+/* 按钮 */
+/* .navbar-header .collapsed {
+	margin-top: -25px;
+	border: 1px solid #585555;
+	margin-left: 265px;
+
+}
+ */
+
+.nva_q .Logo {
+	position: absolute;
+	top: -17px;
+	left: 57px;
+	cursor: pointer;
+	width: 60px;
+	height: 68px;
+}
+
+
+.top .top_left {
+	margin-left: 0;
+}
+
+
+.top {
+	width: 100%;
+}
+
+.nva_q ul {
+	width: 500px;
+	margin-left: 7%;
+	margin-top: 0;
+}
+
+.navbar-toggle {
+	margin-top: -25px;
+	margin-right:-107px; 
+}
+
+.nva_q {
+	position: absolute;
+	z-index: 100;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.navbar-nav {
+	margin: 0;
+}
+
+ul.nav.navbar-nav li {
+	margin-right: 0%;
+}
+/* .nva_q ul li {
+	text-align: center;
+}
+ */
+ul.nav.navbar-nav li a {
+	font-size: 8px;
+}
+
+/* 轮播图 */
+
+.swipe_d {
+	position: relative;
+	margin-top: 0;
+}
+
+.carousel-inner {
+	overflow: visible;
+}
+
+.carousel {
+	border: none;
+}
+
+.swipe_nav_q {
+	width: 100%;
+	background-color: #262831;
+	/* margin-top: 10px; */
+	line-height: 65px;
+
+}
+
+
+.img_yd img {
+	width: 100%;
+
+}
+
+ol, ul {
+	margin-top: 0;
+    margin-bottom: 0px;
+}
+
+
+.row {
+	margin-left: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	font-family: "苹方";
+}
+.col-md-3 {
+	width: 12%;
+	float: left;
+}
+
+.swipe_nav {
+	margin: 0 auto;
+	width: 1160px;
+	height: 65px;
+}
+.row span {
+	cursor: pointer;
+}
+
+.swipe_nav_q .row .one:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .two:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .three:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .four:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+.swipe_nav_q .active {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+/* 下载 */
+.download {
+	width: 100%;
+	/* height: 760px; */
+
+	background: url('../img/背景.png') no-repeat;
+	/* overflow: hidden; */
+	background-size: cover;
+	
+}
+
+.download_c {
+	margin: auto;
+	width: 90%;
+	position: relative;
+}
+
+.download_c .phone {
+	margin-top: 44px;
+	/* background-size: cover; */
+	margin-left: 4%; 
+	height: 260px;
+}
+
+.download_c .download_r {
+	position: absolute;
+	top: 53px;
+	/* left: 540px;  */
+	right: 2%;
+	float: right;
+}
+
+.download_r .app {
+	width: 140px;
+	height: 25px;
+	border: 2px solid #fff;
+	border-radius: 12.5px;
+	color: #fff;
+	font-family: "苹方";
+	font-size: 4px;
+	line-height: 21px;
+	text-align: center;
+	font-weight: 600;
+}
+.download_r .app:hover{
+	cursor: pointer;
+}
+
+.download_r .describe {
+	display: block;
+	color: #fff;
+	font-size: 19px;
+	margin-top: 20px;
+}
+
+.download_r .QR_code {
+	margin-top: 6%;
+	margin-left: 30%;
+	width: 75px;
+}
+.download_r .ios {
+	display: inline-block;
+	margin-top: 48px;
+	margin-right: 20px;
+	width: 90px;
+	height: 50px;
+}
+.download_r .Android {
+	display: inline-block;
+	margin-top: 48px;
+	width: 90px;
+	height: 50px;
+}
+.download_r .ios,.Android:hover{
+	cursor: pointer;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+/* 	.navbar-nav {
+	margin-top: 0;
+} */
+
+.nva_q .Logo {
+	position: absolute;
+	top: -14px;
+	left: 46px;
+	cursor: pointer;
+	width: 60px;
+	height: 68px;
+}
+
+/* .logo {
+	width: 50px;
+	height: 50px;
+} */
+
+
+.nva_q {
+	position: absolute;
+	z-index: 100;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.nva_q ul {
+	width: 100%;
+	margin-left: 6%;
+
+}
+ul.nav.navbar-nav li {
+	margin-right: 0%;
+}
+/* .nva_q ul li {
+	text-align: center;
+}
+ */
+ul.nav.navbar-nav li a {
+	font-size: 14px;
+}
+
+
+
+.swipe_d {
+	position: relative;
+	margin-top: 0;
+}
+.img_yd img {
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-inner {
+	overflow: visible;
+}
+
+.carousel {
+	border: none;
+}
+
+.item img {
+	width: 100%;
+}
+.swipe_nav_q {
+	width: 100%;
+	background-color: #262831;
+	/* margin-top: 10px; */
+	line-height: 65px;
+
+}
+.yuan {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+
+
+.row {
+	margin-left: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	font-family: "苹方";
+}
+.col-md-3 {
+	width: 16%;
+	float: left;
+}
+
+.swipe_nav {
+	margin: 0 auto;
+	width: 1160px;
+	height: 65px;
+}
+.row span {
+	cursor: pointer;
+}
+
+.swipe_nav_q .row .one:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .two:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .three:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .four:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+.swipe_nav_q .active {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+/* 下载 */
+.download {
+	width: 100%;
+	/* height: 760px; */
+
+	background: url('../img/背景.png') no-repeat;
+	/* overflow: hidden; */
+	background-size: cover;
+	
+}
+
+.download_c {
+	margin: auto;
+	width: 1160px;
+	position: relative;
+}
+
+.download_c .phone {
+	margin-top: 44px;
+	/* background-size: cover; */
+	margin-left: 8%; 
+	height: 457px;
+}
+
+.download_c .download_r {
+	position: absolute;
+	top: 63px;
+	/* left: 540px;  */
+	right: 39%;
+	float: right;
+}
+
+.download_r .app {
+	width: 140px;
+	height: 25px;
+	border: 2px solid #fff;
+	border-radius: 12.5px;
+	color: #fff;
+	font-family: "苹方";
+	font-size: 4px;
+	line-height: 21px;
+	text-align: center;
+	font-weight: 600;
+}
+.download_r .app:hover{
+	cursor: pointer;
+}
+
+.download_r .describe {
+	display: block;
+	color: #fff;
+	font-size: 23px;
+	margin-top: 34px;
+}
+
+.download_r .QR_code {
+	margin-top: 49px;
+	margin-left: 71px;
+	width: 150px;
+	/* width: 75px; */
+}
+.download_r .ios {
+	display: inline-block;
+	margin-top: 48px;
+	margin-right: 20px;
+	width: 130px;
+	height: 50px;
+}
+.download_r .Android {
+	display: inline-block;
+	margin-top: 48px;
+	width: 130px;
+	height: 50px;
+}
+.download_r .ios,.Android:hover{
+	cursor: pointer;
+}
+
+.carousel-inner .item .img-pc{
+	height: 300px;
+}
+
+.swipe_d {
+	position: relative;
+}
+
+.swipe_logo {
+	position: absolute;
+	top: 100px;
+	left: 58%;
+	transform: translateX(-50%);
+
+}
+.swipe_logo img {
+	width: 130px;
+	height: 84.5px;
+}
+
+.swipe_logo h3 {
+	color: #fff;
+	margin-left: -139px;
+	font-size: 25px;
+}
+.swipe_logo span {
+	font-size: 15px;
+	color: #c3cccc;
+	margin-left: -154px;
+} 
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.Logo {
+	position: absolute;
+	top: -16px;
+	left: 40px;
+	cursor: pointer;
+	width: 60px;
+	height: 68px;
+}
+
+
+.nva_q {
+	position: absolute;
+	z-index: 100;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.nva_q ul {
+	width: 100%;
+	margin-left: 7%;
+
+}
+ul.nav.navbar-nav li {
+	margin-right: 3%;
+}
+/* .nva_q ul li {
+	text-align: center;
+}
+ */
+.swipe_d {
+	position: relative;
+	margin-top: 0;
+}
+
+.carousel-inner {
+	overflow: visible;
+}
+
+.carousel {
+	border: none;
+}
+
+.swipe_nav_q {
+	width: 100%;
+	background-color: #262831;
+	/* margin-top: 10px; */
+	line-height: 65px;
+
+}
+.row {
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-family: "苹方";
+	margin-left: 35px;
+}
+
+.col-md-3 {
+	width: 21%;
+}
+
+.swipe_nav {
+	margin: 0 auto;
+	width: 1160px;
+	height: 65px;
+}
+.row span {
+	cursor: pointer;
+}
+
+.swipe_nav_q .row .one:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .two:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .three:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+.swipe_nav_q .row .four:hover {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+.swipe_nav_q .active {
+	cursor: pointer;
+	background-color: #1d1e26;
+}
+
+/* 下载 */
+.download {
+	width: 100%;
+	/* height: 760px; */
+
+	background: url('../img/背景.png') no-repeat;
+	/* overflow: hidden; */
+	background-size: cover;
+	
+}
+
+.download_c {
+	margin: auto;
+	width: 100%;
+	position: relative;
+}
+
+.download_c .phone {
+	margin-top: 44px;
+	/* background-size: cover; */
+	margin-left: 8%; 
+	height: 530px;
+}
+
+.download_c .download_r {
+	position: absolute;
+	top: 120px;
+	/* left: 540px;  */
+	right: 10%;
+	float: right;
+}
+
+.download_r .app {
+	width: 140px;
+	height: 25px;
+	border: 2px solid #fff;
+	border-radius: 12.5px;
+	color: #fff;
+	font-family: "苹方";
+	font-size: 4px;
+	line-height: 21px;
+	text-align: center;
+	font-weight: 600;
+}
+.download_r .app:hover{
+	cursor: pointer;
+}
+
+.download_r .describe {
+	display: block;
+	color: #fff;
+	font-size: 34px;
+	margin-top: 34px;
+}
+
+.download_r .QR_code {
+	margin-top: 49px;
+	margin-left: 137px;
+	width: 150px;
+}
+.download_r .ios {
+	display: inline-block;
+	margin-top: 48px;
+	margin-right: 20px;
+	width: 200px
+}
+.download_r .Android {
+	display: inline-block;
+	margin-top: 48px;
+	width: 200px;
+}
+.download_r .ios,.Android:hover{
+	cursor: pointer;
+}
+
+.carousel-inner .item .img-pc{
+	height: 630px;
+}
+
+.swipe_d {
+	position: relative;
+}
+
+.swipe_logo {
+	position: absolute;
+	top: 172px;
+	left: 56%;
+	transform: translateX(-50%);
+
+}
+
+.swipe_logo h3 {
+	color: #fff;
+	margin-left: -100px;
+	font-size: 28px;
+}
+.swipe_logo span {
+	font-size: 18px;
+	color: #c3cccc;
+	margin-left: -130px;
+} 
+
+
+
+}

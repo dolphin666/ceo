@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <style>
+        .div{
+            background-color:black;
+            border: 1px solid red;
+            width:100px;
+            height:100px;
+            display:none
+        }
+    </style>
+</head>
+<body>
+<button>点击</button>
+<div class="div"></div>
+<script src="assets/jquery/jquery.js"></script>
+<script language="JavaScript">
+    $("button").click(function(){
+        if($(".div").css("display")=="none"){
+            $(".div").show();
+        }else{
+            $(".div").hide();
+        }
+    });
+</script>
+</body>
+</html>

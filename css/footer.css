@@ -1,0 +1,149 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-12 14:15:15
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-17 18:09:01
+*/
+
+.footer_q {
+	background-color: #262831;
+	width: 100%;
+}
+
+.footer {
+	/* width: 80%; */
+	height: 2.3rem;
+	background-color: #262831;
+	/* border-bottom: 1px solid #2f323d; */
+	/* margin-left: 25%; */
+	position: relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.footer ul {
+	margin-top: 0.4rem;
+}
+
+.footer ul h3 {
+	color: #fff;
+	font-size: 0.2rem;
+	font-family: "微软雅黑";
+	margin-bottom: 26px;
+
+}
+
+.footer ul li {
+	cursor: pointer;
+	list-style: none;
+	/* text-align: center; */
+	color: #bdbdbf;
+
+}
+
+.Logo_bot {
+	/* margin-left: 10px; */
+	padding-left: 0;
+	margin-left: -0.3rem;
+	margin-right: -1.0rem;
+	margin-top: 0.3rem;
+}
+
+.Logo_bot img {
+	margin-top: 0.3rem;
+}
+
+.footer_bottom {
+	height: 1.6rem;
+	text-align: center;
+	position: relative;
+	clear: both;
+}
+.footer_bottom ul {
+	position: absolute;
+	top: -1.1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+.footer_bottom ul li{
+	list-style: none;
+	color: #fff;
+	display: inline-block;
+	margin-right: 0.1rem;
+	width: 0.3rem;
+	height: 0.2rem;
+}
+.footer_bottom span {
+	display: block;
+	color: #fff;
+	margin-top:0.5rem;
+	font-size: 0.14rem;
+}
+
+/* .footer_q .four .li_1 {
+	margin-left: -118px;
+}
+
+.footer_q .four .li_2 {
+	margin-left: -116px;
+}
+
+
+.footer_q .four .li_3 {
+	margin-left: -66px;
+}
+
+.footer_q .four .li_4 {
+	margin-left: -117px;
+}
+
+.footer_q .four .li_5 {
+	margin-left: -75px;
+}
+
+.footer_q .four .li_6{
+	margin-left:86px;
+} */
+
+.footer_bottom {
+	text-align: center;
+}
+
+
+
+.four h3 {
+	width: 0.9rem;
+}
+
+
+.footer  ul {
+	float: left;
+	margin-left: 0.6rem;
+}
+
+.footer ul li {
+	font-size: 0.14rem;
+}
+.footer .Logo_bot {
+float: left;
+}
+
+
+.footer .list {
+	margin-left: 1.3rem;
+} 
+
+
+.bottom_x {
+	height: 0.02rem;
+	width: 60%;
+	background-color: #2f323d;
+	margin: 0.2rem auto;
+}
+
+

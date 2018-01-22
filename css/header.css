@@ -1,0 +1,204 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-11 14:54:59
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-17 09:25:17
+*/
+.top{
+	height: 40px;
+	background-color: #262831;
+	color: #fff;
+	font-family: "苹方";
+	font-size: 14px;
+	border-bottom: 2px solid #4c505f;
+	overflow:hidden;
+}
+
+.glyphicon {
+	color: #d6cc45;
+}
+
+.top  ul {
+	float: left;
+	margin-top: 10px;
+}
+
+
+.top  ul li {
+	float: left;
+	list-style: none;
+	margin-right: 14px;
+	cursor: pointer;
+}
+
+.top .top_right {
+	float: right;
+	margin-right: 30px;
+}
+
+.top  .top_left {
+	margin-left: 14px;
+}
+
+ .top .top_left .zl {
+	color: #d20b21;
+	cursor: default;
+	font-family: "楷体";
+}
+.nav {
+	/*padding: ;*/
+}
+
+.nav_font a{
+	font-size: 16px;
+	font-family: "苹方";
+	font-weight: 600;
+	color: #c8c8c8;
+	text-align: center;
+}
+
+.nav_font a span {
+	color: #5e5e5e;
+	font-size: 10px;
+	font-family: "苹方";
+	font-weight: 600;
+}
+
+.nav_font .bot:hover{
+	color: red;	
+	/* cursor: pointer; */
+}
+
+.navbar-nav {
+  float: none;
+  text-align:center;
+}
+ul.nav.navbar-nav  li {
+    float:none;
+    display: inline-block;
+    margin: 0;
+}
+
+
+
+.navbar-custom .navbar-nav a {
+	padding: 0;
+}
+
+
+/* .navbar-custom .navbar-nav > .active > a, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus{
+	color: #df4f4f;
+	border-bottom: none;
+	background: transparent;
+} */
+
+.active a>span {
+	color: #df4f4f;
+}
+
+
+ a:hover>span,
+ a:focus>span
+ {color:#df4f4f; /*鼠标在a上面时，span变蓝色*/}
+
+
+ .navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #df4f4f;
+  background-color: transparent;
+  border-bottom:0px solid transparent;
+} 
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #df4f4f;
+  background:transparent;
+  border-bottom:0 solid transparent;
+}
+
+
+
+
+
+.navbar-toggle {
+	border: 1px solid red;
+}
+
+.navbar-toggle .icon-bar {
+	border: 1px solid red;
+}
+
+.down_f {
+	font-weight: 400;
+	font-size: 10px;
+}
+
+
+.btn-default {
+	color: #fff;
+	background-color: #262831;
+	border-color: #262831;
+}
+
+.btn-group {
+	background-color: #262831;
+	font-size: 14px;
+	margin-top: -7px;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+	color: #fff;
+background-color: #262831;
+border-color: #262831;
+
+}
+
+.btn-default:hover {
+	color: red;
+	background-color:#262831;
+	border-color: #262831;
+}
+
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  /* color: #333; */
+  background-color: #262831;
+  border-color: #262831;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  /* color: #333; */
+  background-color: #262831;
+  border-color: #262831;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-color: #262831;
+}
+
+.dropdown-menu {
+min-width: 80px;
+}
+
+
+.carousel-inner .item .img-pc{
+	display: block;
+	width:100%;
+	height:6.9rem;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.navbar-toggle {
+	border: 1px solid #5e5e5e;
+}

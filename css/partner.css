@@ -1,0 +1,30 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-12 17:30:03
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-16 15:18:21
+*/
+/* 合作伙伴 */
+.paterner{
+	width: 100%;
+	background-color: #000;
+	height: 300px;
+	overflow: hidden;
+
+}
+.paterner .together{
+	list-style: none;
+}
+
+.paterner  ul {
+	float: left;
+}
+
+.paterner .together li{
+
+	
+}
+
+.paterner .container {
+	border-bottom: 1px solid red;
+}

@@ -1,0 +1,710 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100px;
+  overflow-x: hidden;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.cl {
+  clear: both;
+}
+/*移动端头部*/
+.m_menu {
+  position: relative;
+  padding-top: .02rem;
+}
+.m_menu h1 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+.m_menu .m_menu_btn {
+  position: absolute;
+  right: 30px;
+  top: 9px;
+  cursor: pointer;
+}
+.m_menu .m_menu_btn img {
+  width: 24px;
+  height: 20px;
+}
+.m_menu .m_menu_btn:hover .m_menu_list {
+  display: block;
+}
+#mengban {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(76, 80, 95, 0.5);
+  z-index: 400;
+}
+/*移动端头部end*/
+.Logo {
+  position: absolute;
+  top: 0.33rem;
+  left: 0;
+  cursor: pointer;
+  width: 0.68rem;
+  height: 0.68rem;
+}
+.m_menu_list {
+  width: 123px;
+  height: 143px;
+  paddiing-bottom: 5px;
+  position: absolute;
+  top: 42px;
+  right: 18px;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.m_menu_list .m_list_sj {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #4c505f;
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+.m_menu_list ul {
+  width: 123px;
+  height: 130px;
+  background: #4c505f;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 16px 27px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.m_menu_list ul li {
+  float: left;
+  list-style-type: none;
+  padding-bottom: 8px;
+}
+.m_menu_list ul li span {
+  padding-left: 5px;
+}
+.m_menu_list ul li img {
+  width: 18px;
+  height: 18px;
+}
+.nva_q {
+  position: absolute;
+  z-index: 100;
+  top: 0.28rem;
+  left: 52%;
+  transform: translateX(-50%);
+}
+.nva_q .Logo {
+  width: 60px;
+  height: 60px;
+}
+.nva_q ul.nav_font {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0.4rem;
+  margin-top: -0.25rem;
+}
+ul.nav.navbar-nav li {
+  padding-left: 0.09rem;
+}
+.swipe_d {
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+}
+.carousel-inner {
+  width: 100%;
+  overflow-x: hidden;
+}
+.carousel {
+  border: none;
+  width: 100%;
+}
+.swipe_nav_q {
+  width: 100%;
+  background-color: #262831;
+  line-height: 0.65rem;
+}
+.img-mobile {
+  padding: 0;
+  margin: 0;
+}
+.row {
+  color: #fff;
+  font-size: 0.18rem;
+  font-family: "苹方";
+}
+@media (max-width: 991px) {
+  .row {
+    font-size: 12px;
+  }
+}
+.swipe_nav_q .row {
+  margin: 0 auto;
+  height: 0.65rem;
+  text-align: center;
+}
+.swipe_nav_q .row div {
+  padding: 0;
+}
+.swipe_nav_q .row .one:hover {
+  cursor: pointer;
+  background-color: #1d1e26;
+}
+.swipe_nav_q .row .two:hover {
+  cursor: pointer;
+  background-color: #1d1e26;
+}
+.swipe_nav_q .row .three:hover {
+  cursor: pointer;
+  background-color: #1d1e26;
+}
+.swipe_nav_q .row .four:hover {
+  cursor: pointer;
+  background-color: #1d1e26;
+}
+.swipe_nav_q .active {
+  cursor: pointer;
+  background-color: #1d1e26;
+}
+.swipe_d {
+  position: relative;
+}
+.swipe_logo {
+  position: absolute;
+  top: 1.72rem;
+  margin: 0px 44.5%;
+  width: 100%;
+}
+.swipe_logo h3 {
+  display: block;
+  color: #fff;
+  margin-left: -1.18rem;
+  font-size: 28px;
+}
+.swipe_logo span {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding-bottom: .1rem;
+  color: #c3cccc;
+  margin-left: -1.55rem;
+}
+.swipe_logo img {
+  display: block;
+  width: 208px;
+  height: 1.47rem;
+}
+.swipe_logo a:nth-child(4) {
+  display: block;
+  width: 2.11rem;
+  height: .5rem;
+  padding: .1rem .6rem;
+  -webkit-border-radius: .05rem;
+  -moz-border-radius: .05rem;
+  border-radius: .25rem;
+  text-decoration: none;
+  font-size: .2rem;
+  background: #9e323d;
+}
+.swipe_logo a:nth-child(4) img {
+  width: 208px;
+  height: 47px;
+}
+/* 下载 */
+.download {
+  width: 100%;
+  height: 7.6rem;
+  background: url('../img/背景.png') no-repeat;
+  background-size: cover;
+}
+.download_c {
+  margin: auto;
+  width: 11.6rem;
+  position: relative;
+}
+.download_c .phone {
+  margin-top: 0.35rem;
+  margin-left: 8%;
+  height: 7.0rem;
+}
+.download_c .download_r {
+  position: absolute;
+  top: 1.77rem;
+  right: 10%;
+  float: right;
+}
+.download_r .app {
+  width: 1.4rem;
+  height: 0.25rem;
+  border: 0.02rem solid #fff;
+  border-radius: 0.125rem;
+  color: #fff;
+  font-family: "苹方";
+  font-size: 0.04rem;
+  line-height: 0.21rem;
+  text-align: center;
+  font-weight: 600;
+}
+.download_r .app:hover {
+  cursor: pointer;
+}
+.download_r .describe {
+  display: block;
+  color: #fff;
+  font-size: 0.34rem;
+  margin-top: 0.34rem;
+}
+.download_r .QR_code {
+  margin-top: 0.49rem;
+  margin-left: 1.37rem;
+  width: 1.5rem;
+}
+.download_r .ios {
+  display: inline-block;
+  margin-top: 0.48rem;
+  margin-right: 0.2rem;
+}
+.download_r .Android {
+  display: inline-block;
+  margin-top: 0.48rem;
+}
+.download_r .ios,
+.Android:hover {
+  cursor: pointer;
+}
+.carousel-inner {
+  width: 100%;
+}
+.carousel-inner item:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.carousel-inner .item .img-pc {
+  height: 6.9rem;
+}
+/* 交易 */
+.Transaction {
+  overflow: hidden;
+  width: 100%;
+  height: 7.3rem;
+  background: url('../img/Transaction-bg.png') no-repeat;
+  position: relative;
+}
+.Transaction .swipe_logo {
+  margin-top: 3.8rem;
+  margin-left: -5%;
+  height: 1.68rem;
+  width: 2.5rem;
+}
+.Transaction .fuwu {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Transaction .tuoyuan {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Transaction h3 {
+  position: absolute;
+  margin-left: 50%;
+  top: 1.13rem;
+  transform: translateX(-50%);
+  font-size: 0.28rem;
+  font-family: "微软雅黑";
+  color: #555555;
+}
+.Transaction span {
+  position: absolute;
+  top: 1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #888888;
+  font-size: 0.17rem;
+  font-family: "微软雅黑";
+}
+.col-md-3 {
+  text-align: center;
+}
+/* 官方公告行业资讯 */
+.Information {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 0.75rem;
+}
+.Information .Content {
+  margin: 0 auto;
+  width: 65%;
+  margin-bottom: 0.2rem;
+}
+.Information .Content .Information_left {
+  width: 48%;
+  margin-right: 0.15rem;
+  float: left;
+}
+.Information .Content .Information_right {
+  width: 50%;
+  float: right;
+}
+.Information .Content .Information_left .Information_left_top {
+  border-bottom: 0.01rem solid #000;
+}
+.Information .Content .Information_left .Information_left_top h3 {
+  font-size: 0.24rem;
+  color: #000;
+  font-family: "微软雅黑";
+  display: inline-block;
+  margin-left: 0.15rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.8rem;
+}
+.Information .Content .Information_left .Information_left_top span {
+  font-size: 0.16rem;
+  font-family: "微软雅黑";
+  display: inline-block;
+  color: #999999;
+  float: right;
+  margin-right: 0.3rem;
+  margin-top: 0.87rem;
+}
+.Information .Content .Information_left .Information_left_bottom {
+  position: relative;
+  margin-top: 0.38rem;
+}
+.Information .Content .Information_left .Information_left_bottom .Calendar {
+  position: absolute;
+  width: 0.55rem;
+  height: 0.68rem;
+  background: url('../img/Calendar.png') no-repeat;
+  display: inline-block;
+  text-align: center;
+  top: 0.02rem;
+  left: 0;
+}
+.Information .Content .Information_left .Information_left_bottom .Calendar h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+.Information .Content .Information_left .Information_left_bottom .Calendar h4 {
+  font-size: 0.14rem;
+  font-family: "微软雅黑";
+  color: #ea9291;
+  font-weight: 400;
+  margin-top: 0.1rem;
+}
+.Information .Content .Information_left .Information_left_bottom .Calendar h3 {
+  font-size: 0.18rem;
+  font-family: "微软雅黑";
+  color: #ea9291;
+  font-weight: 600;
+  margin-top: 0.03rem;
+}
+.Information .Content .Information_left .Information_left_bottom ul {
+  margin-left: 63px;
+  list-style: none;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement {
+  font-size: 0.18rem;
+  font-family: "微软雅黑";
+  margin-top: 0.25rem;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement span {
+  font-size: 0.12rem;
+  color: #999caa;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_2 .Calendar {
+  top: 31%;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_3 .Calendar {
+  top: 49%;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_4 .Calendar {
+  top: 69%;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_5 .Calendar {
+  top: 87%;
+}
+.Information .Content .Information_left .Information_left_bottom ul:hover {
+  cursor: pointer;
+}
+.Information .Content .Information_left .Information_left_top span:hover {
+  cursor: pointer;
+  color: #000;
+}
+/* 左边 */
+.Information_right_left .Calendar_left {
+  position: absolute;
+  width: 0.55rem;
+  height: 0.68rem;
+  background: url('../img/Calendar.png') no-repeat;
+  display: inline-block;
+  text-align: center;
+  top: 0.02rem;
+  left: 0;
+}
+.Information .Content .Information_left .Information_left_bottom .Calendar_left h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+.Information .Content .Information_left .Information_left_bottom .Calendar_left h4 {
+  font-size: 0.14rem;
+  font-family: "微软雅黑";
+  color: #3dc18e;
+  font-weight: 400;
+  margin-top: 0.1rem;
+}
+.Information .Content .Information_left .Information_left_bottom .Calendar_left h3 {
+  font-size: 0.18rem;
+  font-family: "微软雅黑";
+  color: #3dc18e;
+  font-weight: 600;
+  margin-top: 0.03rem;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_1 .Calendar_left h3 {
+  color: #000;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_2 .Calendar_left {
+  top: 31%;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_3 .Calendar_left {
+  top: 49%;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_4 .Calendar_left {
+  top: 69%;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement_5 .Calendar_left {
+  top: 87%;
+}
+/* 新手帮助 */
+.Novice_help {
+  width: 100%;
+  height: 6.88rem;
+  background-color: #262831;
+  position: relative;
+}
+.Novice_help .Novice_help_left {
+  width: 40.6%;
+  height: 6.88rem;
+  background: url('../img/pexels-photo-280193.png') no-repeat;
+  position: relative;
+  float: left;
+}
+.Novice_help .Novice_help_left .Novice {
+  position: absolute;
+  top: 0.93rem;
+  right: 1.04rem;
+}
+.Novice_help .Novice_help_left .Novice h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 0.28rem;
+  font-weight: 400;
+  font-family: "微软雅黑";
+}
+.Novice_help .Novice_help_left .Novice span {
+  color: #fff;
+  font-size: 0.18rem;
+  font-family: "微软雅黑";
+  margin-top: 0.16rem;
+  display: block;
+}
+.Novice_help .Novice_help_left .Doubt {
+  position: absolute;
+  top: 0.38rem;
+  right: 3.58rem;
+}
+.Novice_help .Novice_help_left .mintu {
+  position: absolute;
+  bottom: 0.68rem;
+  right: 0.57rem;
+  width: 2.08rem;
+  height: 2.08rem;
+  border: 0.01rem solid #3f4251;
+  text-align: center;
+  line-height: 1.86rem;
+}
+.Novice_help .Novice_help_right {
+  float: left;
+  position: relative;
+}
+.Novice_help .Novice_help_right .Withdrawals {
+  width: 6.75rem;
+  height: 1.2rem;
+  background: url('../img/1.png') no-repeat;
+  margin-left: 0.35rem;
+  margin-top: 0.85rem;
+  overflow: hidden;
+}
+.Novice_help .Novice_help_right h3 {
+  font-size: 0.18rem;
+  font-family: "苹方";
+  color: #fff;
+  margin-top: 0.28rem;
+  margin-left: 0.31rem;
+}
+.Novice_help .Novice_help_right h3 span {
+  border-bottom: 0.02rem solid #fff;
+}
+.Novice_help .Novice_help_right .top_ups ul {
+  list-style: none;
+  margin-left: 0.3rem;
+  margin-top: 0.3rem;
+}
+.Novice_help .Novice_help_right .top_ups ul li {
+  float: left;
+  font-size: 0.14rem;
+  color: #fff;
+  margin-right: 0.15rem;
+}
+.Novice_help .Novice_help_right .Withdrawals_1 {
+  margin-left: 0.35rem;
+  margin-top: 0.5rem;
+}
+.Novice_help .Novice_help_right .Withdrawals_2 {
+  margin-left: 0.35rem;
+  margin-top: -1rem;
+}
+.Novice_help .Novice_help_right .Withdrawals_3 {
+  margin-left: 0.35rem;
+  margin-top: -1rem;
+}
+.but {
+  width: 6.75rem;
+  height: 0.01rem;
+  background-color: #3f4251;
+  position: absolute;
+  left: 0.35rem;
+}
+.Novice_help .Novice_help_right .Withdrawals_1 .but {
+  bottom: 2.2rem;
+}
+.Novice_help .Novice_help_right .Withdrawals_2 .but {
+  bottom: 1.05rem;
+}
+.Novice_help .Novice_help_right .Withdrawals_3 .but {
+  bottom: -0.1rem;
+}
+.Novice_help .Novice_help_right .top_ups ul li:hover {
+  cursor: pointer;
+  color: #1736d2;
+}
+.Novice_help .Triangle {
+  position: absolute;
+  top: 1.4rem;
+  right: 9.76rem;
+  z-index: 333;
+}
+/* 合作伙伴 */
+.paterner {
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+.paterner .together li {
+  margin-right: 0.2rem;
+  margin-left: 0;
+}
+.paterner h3 {
+  margin-top: 0.33rem;
+  color: #fff;
+}
+.paterner .container_ {
+  margin-top: 0.7rem;
+  width: 53%;
+  height: 0.01rem;
+  background: url('../img/Rectangle1.png') no-repeat;
+  margin: 0 auto;
+}
+.tr {
+  margin-left: 12%;
+  width: 100%;
+  height: 2.0rem;
+}
+#jy_table_pc {
+  width: 100%;
+  padding-top: 25px;
+  text-align: left;
+  background: #fff;
+  box-sizing: border-box;
+}
+#jy_table_pc ul {
+  list-style-type: none;
+}
+#jy_table_pc ul li {
+  float: left;
+}
+#jy_table_pc .jyt_con {
+  width: 62.5%;
+  margin: 0 auto;
+  clear: both;
+}
+#jy_table_pc .jyt_con .jyt_con::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#jy_table_pc .jyt_con .jyt_menu {
+  height: 50px;
+  width: 100%;
+  color: #626262;
+  font-size: 14px;
+  font-weight: bold;
+  background: #f9f9f9;
+}
+#jy_table_pc .jyt_con .jyt_menu .qqsc {
+  display: inline-block;
+  color: #fff;
+  background: #D14957;
+  padding: 6px 20px;
+}
+#jy_table_pc .jyt_con li ul {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+}
+#jy_table_pc .jyt_con li ul li {
+  width: 14.2857%;
+  height: 28px;
+  padding-left: 18px;
+  line-height: 52px;
+}
+#jy_table_pc .jyt_con > li {
+  width: 100%;
+  height: 42px;
+  border-bottom: 1px solid #F1F1F1;
+}
+#jy_table_pc:after {
+  content: "";
+  display: block;
+  clear: both;
+}

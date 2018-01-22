@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/partner.css">
+</head>
+<body>
+<header>
+    <div class="top">
+        <ul class="top_left  hidden-xs hidden-sm">
+            <li class="zl">金融级别安全交易所</li>
+            <li>
+                <img src="img/中国国旗.png" alt="">
+            </li>
+            <li>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        CN <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">简体中文</a></li>
+                        <li><a href="#">En</a></li>
+                        <li><a href="#">韩语</a></li>
+                        <li role="separator" class="divider"></li>
+                        <!-- <li><a href="#">Separated link</a></li> -->
+                    </ul>
+                </div>
+
+            </li>
+            <li>|</li>
+            <li>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        简体中文 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">简体中文</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">韩语</a></li>
+                        <li role="separator" class="divider"></li>
+                        <!-- <li><a href="#">Separated link</a></li> -->
+                    </ul>
+                </div>
+            </li>
+            <li>|</li>
+            <li class="font_g">
+                <span><img src="img/notice.png" alt=""></span>&nbsp网站公告：关于开放UBTC和XRP提币业务的公告
+            </li>
+        </ul>
+        <ul class="top_right hidden-xs hidden-sm">
+            <li>
+                <span><img src="img/goin.png" alt=""></span> 会员登录
+            </li>
+            <li>
+                <span><img src="img/Real-name authentication.png" alt=""></span> 实名认证
+            </li>
+        </ul>
+        <!--移动端头部-->
+        <div class="m_menu hidden-lg hidden-md">
+            <h1 class="text-center lf">BITE.CEO</h1>
+            <span id="m_menu_btn" class="m_menu_btn">
+                <img src="img/menu-btn.png" class="img-responsive" alt="menu-btn">
+            </span>
+        </div>
+    </div>
+    <!-- 导航条开始 -->
+    <div class="container nva_q hidden-sm hidden-xs">
+        <nav class="navbar navbar-custom">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!--   <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+
+                                </button> -->
+
+                <!-- <a class="navbar-brand logo" href="#">
+                    <span class="wjs_icon wjs_icon_logo"></span>
+                    <span class="wjs_icon wjs_icon_word"></span>
+                </a> -->
+                <!-- </div> -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+
+                <img src="img/Logo.png" alt="" class="Logo">
+                <ul class="nav  navbar-nav  nav_font">
+                    <li>
+                        <a href="#">网站首页<br>
+                            <span class="bot">Home</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden-xs">交易中心<br>
+                            <span>Trading Center</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden-xs">K线走势<br>
+                            <span>Trend Chart</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">新币投票<br>
+                            <span>New Vote</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">财务中心<br>
+                            <span>Financial</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">安全中心<br>
+                            <span>safety</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">会员注册<br>
+                            <span>Register</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">最新公告<br>
+                            <span>Service</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <!-- </div> -->
+        </nav>
+    </div>
+</header>
+<div class="m_menu_list" style="display: none">
+    <span class="m_list_sj"></span>
+    <ul>
+        <li>
+            <a href="/">
+                <img src="img/login.png" alt="">
+                <span>登录</span>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <img src="img/regist.png" alt="">
+                <span>注册</span>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <img src="img/close.png" alt="">
+                <span>退出</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="mengban" class="mengban" style="display: none"></div>
+<!-- 轮播图 -->
+<!-- 轮播图开始 -->
+<div class="swipe_d">
+    <div id="carousel-example-generic" class="carousel slide swipe" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-sm hidden-xs  yuan">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="#" class="img-responsive img-pc hidden-xs" style="background-image:url(img/海报一.jpg)"></a>
+                <a href="#" class="img-mobile hidden-sm hidden-md hidden-lg img_yd">
+                    <img src="img/640340-1.jpg" class="img-responsive">
+                </a>
+                <div class="swipe_logo">
+                    <img src="img/swipe_logo.png" alt="">
+                    <h3>CEO交易所,承载用户的信赖与支持</h3>
+                    <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
+                    <a href="">关于我们</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#" class="img-responsive img-pc hidden-xs" style="background-image:url(img/海报二.jpg)"></a>
+                <a href="#" class="img-mobile hidden-sm hidden-md hidden-lg img_yd">
+                    <img src="img/640340-2.jpg" class="img-responsive">
+                </a>
+                <div class="swipe_logo">
+                    <img src="img/swipe_logo.png" alt="">
+                    <h3>CEO交易所,承载用户的信赖与支持</h3>
+                    <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
+                    <a href=""><b class="jyzx_logo"></b> 交易中心</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#" class="img-responsive img-pc hidden-xs" style="background-image:url(img/海报三.jpg)"></a>
+                <a href="#" class="img-mobile hidden-sm hidden-md hidden-lg img_yd">
+                    <img src="img/640340-3.jpg" class="img-responsive">
+                </a>
+                <div class="swipe_logo">
+                    <img src="img/swipe_logo.png" alt="">
+                    <h3>CEO交易所,承载用户的信赖与支持</h3>
+                    <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
+                    <a href="">了解我们</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        </a>
+    </div>
+
+    <!--<div class="swipe_logo">
+        <img src="img/swipe_logo.png" alt="">
+        <h3>CEO交易所,承载用户的信赖与支持</h3>
+        <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
+        <br>
+        <img src="img/gywm.png" alt="关于我们">
+    </div>-->
+
+
+</div>
+
+<!--轮播图下导航-->
+<div class="swipe_nav_q">
+    <div class="row">
+        <div class="col-md-2 hidden-xs hidden-sm"></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 one active"><span>对CNY交易区</span></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 two"><span>对USDT交易区</span></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 three"><span>对BTC交易区</span></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 four"><span>对KKD交易区</span></div>
+        <div class="col-md-2 hidden-xs hidden-sm"></div>
+
+    </div>
+    <div id="jy_table_pc" class="hidden-sm hidden-xs">
+        <ul class="jyt_con">
+            <li class="jyt_menu">
+                <ul>
+                    <li>币种对CNY</li>
+                    <li>价格(CNY)</li>
+                    <li>最高价(CNY)</li>
+                    <li>最低价(CNY)</li>
+                    <li>交易量</li>
+                    <li>日涨跌</li>
+                    <li><span class="qqsc"><i></i>全球市场</span></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>币种对CNY</li>
+                    <li>价格(CNY)</li>
+                    <li>最高价(CNY)</li>
+                    <li>最低价(CNY)</li>
+                    <li>交易量</li>
+                    <li>日涨跌</li>
+                    <li><i></i>全球市场</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>币种对CNY</li>
+                    <li>价格(CNY)</li>
+                    <li>最高价(CNY)</li>
+                    <li>最低价(CNY)</li>
+                    <li>交易量</li>
+                    <li>日涨跌</li>
+                    <li><i></i>全球市场</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+<!-- 下载 -->
+<div class="download">
+    <div class="download_c">
+        <img class="phone" src="img/iPhone-6-_-4_02.png" alt="" class="img-responsive">
+
+        <div class="download_r">
+            <div class="app">
+                查看app详情介绍
+            </div>
+            <span class="describe">浏览行情 酣畅交易 指尖掌握</span>
+            <img class="QR_code" src="img/二维码.png" alt="" class="img-responsive"><br/>
+
+
+            <span class="ios"> <img src="img/苹果.png" alt="" class="img-responsive"></span>
+            <span class="Android"><img src="img/安卓.png" alt="" class="img-responsive"></span>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- 交易平台 -->
+<div class="Transaction">
+    <h3>CEO交易平台-金融级别安全交易平台</h3>
+    <span>4年以上的金融产品运营风控经验、技术安全防护、数字资产90%存储多重签名冷钱包</span>
+    <!-- <div class="Service"> -->
+    <div>
+        <img src="img/Service.png" alt="" class="fuwu">
+
+        <img src="img/未标题-1_03.png" alt="" class="tuoyuan">
+        <img src="img/swipe_logo.png" alt="" class="swipe_logo">
+    </div>
+    <!-- </div> -->
+</div>
+
+<!-- 官方公告行业资讯 -->
+<div class="Information">
+    <div class="Content">
+        <div class="Information_left">
+            <div class="Information_left_top">
+                <h3>官方公告</h3><span>查看更多</span>
+            </div>
+            <div class="Information_left_bottom">
+
+                <ul>
+                    <li class="Announcement_1 Announcement">
+        <span class="Calendar">
+        <h4>1月</h4>
+        <h3>04</h3>
+      </span>
+                        关于短信运营商升级维护CEO交易所应急处理的公告<br/>
+                        <span>尊敬的用户：由于短信运营商昨晚临时维护升级导致部分会员接收不到短信（目前移动丶联通均
+已升级维护完成）目前电信运营商在升级维护中，为保证CEO交易所所有用户的财产安全，提高
+交易所安全性同时不耽误用户的体验CEO交易所做出应急方案。</span>
+                    </li>
+                    <li class="Announcement_2 Announcement">
+        <span class="Calendar">
+        <h4>12月</h4>
+        <h3>29</h3>
+      </span>
+                        CEO交易所ceo币分红发放(2018-01-01)<br/>
+                        <span>尊敬的用户：香港CEO交易所旗下品牌CeoCoin（ceo币 以下简称ceo）第</span>
+                    </li>
+                    <li class="Announcement_3 Announcement">
+         <span class="Calendar">
+        <h4>12月</h4>
+        <h3>23</h3>
+      </span>
+                        关于CEO交易所HPY(HyperPay)12月28开启自动充提的公告<br/>
+                        <span>尊敬的用户：CEO交易所于香港时间2017年12月28日18:18开启全自动充提</span>
+                    </li>
+                    <li class="Announcement_4 Announcement">
+        <span class="Calendar">
+        <h4>12月</h4>
+        <h3>17</h3>
+      </span>
+                        关于持有CEO币（CEOcoin ）第三期分红方案的公告<br/>
+                        <span>尊敬的用户： 香港CEO交易所CEOcoin（CEO币以下简称ceo）为回馈持有</span>
+                    </li>
+                    <li class="Announcement_5 Announcement">
+        <span class="Calendar">
+        <h4>12月</h4>
+        <h3>13</h3>
+      </span>
+                        CEO交易所 全新在线客服系统 已完美对接上线 (2017-12-28)<br/>
+                        <span>尊敬的会员：本站的在线客服系统于香港时间2017年12月28日02:28 全新上</span>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <div class="Information_right_left">
+            <div class="Information_left">
+                <div class="Information_left_top">
+                    <h3>行业资讯</h3><span>查看更多</span>
+                </div>
+                <div class="Information_left_bottom">
+
+                    <ul>
+                        <li class="Announcement_1 Announcement">
+        <span class="Calendar_left">
+        <h4>1月</h4>
+        <h3>04</h3>
+      </span>
+                            关于短信运营商升级维护CEO交易所应急处理的公告<br/>
+                            <span>尊敬的用户：由于短信运营商昨晚临时维护升级导致部分会员接收不到短信（目前移动丶联通均
+已升级维护完成）目前电信运营商在升级维护中，为保证CEO交易所所有用户的财产安全，提高
+交易所安全性同时不耽误用户的体验CEO交易所做出应急方案。</span>
+                        </li>
+                        <li class="Announcement_2 Announcement">
+        <span class="Calendar_left">
+        <h4>12月</h4>
+        <h3>29</h3>
+      </span>
+                            CEO交易所ceo币分红发放(2018-01-01)<br/>
+                            <span>尊敬的用户：香港CEO交易所旗下品牌CeoCoin（ceo币 以下简称ceo）第</span>
+                        </li>
+                        <li class="Announcement_3 Announcement">
+         <span class="Calendar_left">
+        <h4>12月</h4>
+        <h3>23</h3>
+      </span>
+                            关于CEO交易所HPY(HyperPay)12月28开启自动充提的公告<br/>
+                            <span>尊敬的用户：CEO交易所于香港时间2017年12月28日18:18开启全自动充提</span>
+                        </li>
+                        <li class="Announcement_4 Announcement">
+        <span class="Calendar_left">
+        <h4>12月</h4>
+        <h3>17</h3>
+      </span>
+                            关于持有CEO币（CEOcoin ）第三期分红方案的公告<br/>
+                            <span>尊敬的用户： 香港CEO交易所CEOcoin（CEO币以下简称ceo）为回馈持有</span>
+                        </li>
+                        <li class="Announcement_5 Announcement">
+        <span class="Calendar_left">
+        <h4>12月</h4>
+        <h3>13</h3>
+      </span>
+                            CEO交易所 全新在线客服系统 已完美对接上线 (2017-12-28)<br/>
+                            <span>尊敬的会员：本站的在线客服系统于香港时间2017年12月28日02:28 全新上</span>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 新手帮助 -->
+<div class="Novice_help">
+    <div class="Novice_help_left">
+  <span class="Doubt">
+        <img src="img/Doubt.png" alt="">
+  </span>
+        <div class="Novice">
+
+
+            <h3>新手帮助</h3>
+            <span>为您提供基本细致的操作方法</span>
+        </div>
+        <div class="mintu">
+            <img src="img/Rectangle.png" alt="">
+        </div>
+
+    </div>
+    <div class="Novice_help_right">
+        <div class="Withdrawals">
+            <h3><span>如何</span>充值提现</h3>
+            <div class="top_ups">
+                <ul>
+                    <li>人民币充值</li>
+                    <li>|</li>
+                    <li>人民币提现</li>
+                    <li>|</li>
+                    <li>数字资产充值</li>
+                    <li>|</li>
+                    <li>数字资产提现</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class=" ">
+            <h3><span>实名</span>认证</h3>
+            <div class="top_ups">
+                <ul>
+                    <li>初级实名认证</li>
+                    <li>|</li>
+                    <li>高级实名认证</li>
+                    <li>|</li>
+                    <li>视频认证</li>
+                </ul>
+            </div>
+            <div class="but"></div>
+        </div>
+        <br/>
+
+        <div class="Withdrawals_2">
+            <h3><span>交易</span>委托</h3>
+            <div class="top_ups">
+                <ul>
+                    <li>限价买入/卖出</li>
+                    <li>|</li>
+                    <li>计划买入/卖出</li>
+                    <li>|</li>
+                    <li>API文档</li>
+                </ul>
+            </div>
+            <div class="but"></div>
+        </div>
+        <br/>
+
+        <div class="Withdrawals_3">
+            <h3><span>推荐</span>奖励</h3>
+            <div class="top_ups">
+                <ul>
+                    <li>邀请人奖励如何获得？</li>
+                </ul>
+            </div>
+            <div class="but"></div>
+        </div>
+
+    </div>
+
+    <div class="Triangle"><img src="img/Triangle.png" alt=""></div>
+</div>
+
+
+<div class="paterner">
+    <h3>合作伙伴</h3>
+    <div class="container_">
+    </div>
+    <div class="tr">
+        <ul class="together">
+            <li>
+                <img src="img/one97.png" alt="">
+            </li>
+            <li>
+                <img src="img/two.png" alt="">
+            </li>
+            <li>
+                <img src="img/three.png" alt="">
+            </li>
+            <li><img src="img/four.png" alt=""></li>
+            <li><img src="img/five.png" alt=""></li>
+            <li><img src="img/six.png" alt=""></li>
+            <li><img src="img/Eight.png" alt=""></li>
+            <li><img src="img/Nine.png" alt=""></li>
+            <br>
+            <li><img src="img/Ten.png" alt=""></li>
+            <li><img src="img/one97.png" alt=""></li>
+            <li><img src="img/two.png" alt=""></li>
+            <li><img src="img/three.png" alt=""></li>
+            <li><img src="img/four.png" alt=""></li>
+            <li><img src="img/five.png" alt=""></li>
+            <li><img src="img/six.png" alt=""></li>
+            <li><img src="img/Eight.png" alt=""></li>
+        </ul>
+    </div>
+</div>
+
+
+<footer>
+
+    <div class="footer_q">
+        <!--   <div class="row footer  col-md-offset-1" style="text-align: center;">
+            <div class="col-md-3 Logo_bot">
+              <img src="images/code.jpg" alt="">
+            </div>
+            <div class="col-md-2  hidden-sm hidden-xs">
+              <ul>
+                <li><h3>关于平台</h3></li>
+                <li>公司简介</li>
+                <li>联络方式</li>
+                <li>用户注册</li>
+
+              </ul>
+            </div>
+            <div class="col-md-2 hidden-xs hidden-sm">
+
+              <ul>
+                <li><h3>下载/支持</h3></li>
+                <li>钱包下载</li>
+                <li>新品上线</li>
+                <li>费用说明</li>
+              </ul>
+            </div>
+            <div class="col-md-2 hidden-xs hidden-sm">
+
+              <ul>
+                <li><h3>客户服务</h3></li>
+                <li>新人帮助</li>
+                <li>充值帮助</li>
+                <li>推荐奖励</li>
+              </ul>
+            </div>
+            <div class="col-md-3 hidden-xs hidden-sm hidden-md four">
+
+              <ul>
+                <li><h3>联系我们</h3></li>
+                <li>美国:sunny@zd.com</li>
+                <li>韩国:maple@zd.com</li>
+                <li class="li_3">迪拜:nassar.achkar@zd.com</li>
+                <li class="li_4">瑞士:jimmy@zd.com</li>
+                <li class="li_5">加拿大:sunny.sun@zd.com</li>
+                <li class="li_6">其他地区:support@zd.com</li>
+              </ul>
+            </div>
+          </div> -->
+
+
+        <div class="footer">
+            <div class="Logo_bot">
+                <img src="img/ceoL.png" alt="">
+            </div>
+            <div class="list">
+                <div class=" hidden-sm hidden-xs">
+                    <ul>
+                        <li><h3>关于平台</h3></li>
+                        <li>公司简介</li>
+                        <li>联络方式</li>
+                        <li>用户注册</li>
+
+                    </ul>
+                </div>
+                <div class=" hidden-xs hidden-sm">
+                    <ul>
+                        <li><h3>下载/支持</h3></li>
+                        <li>钱包下载</li>
+                        <li>新品上线</li>
+                        <li>费用说明</li>
+                    </ul>
+                </div>
+                <div class=" hidden-xs hidden-sm">
+
+                    <ul>
+                        <li><h3>客户服务</h3></li>
+                        <li>新人帮助</li>
+                        <li>充值帮助</li>
+                        <li>推荐奖励</li>
+                    </ul>
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md four pull-left">
+                    <ul>
+                        <li><h3>联系我们</h3></li>
+                        <li class="li_1">美国:sunny@zd.com</li>
+                        <li class="li_2">韩国:maple@zd.com</li>
+                        <li class="li_3">迪拜:nassar.achkar@zd.com</li>
+                        <li class="li_4">瑞士:jimmy@zd.com</li>
+                        <li class="li_5">加拿大:sunny.sun@zd.com</li>
+                        <li class="li_6">其他地区:support@zd.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom_x"></div>
+
+
+        <div class="footer_bottom">
+
+            <ul>
+                <li><img src="img/icon-4.png" alt=""></li>
+                <li><img src="img/icon-6.png" alt=""></li>
+                <li><img src="img/icon-5.png" alt=""></li>
+                <li><img src="img/icon-3.png" alt=""></li>
+                <li><img src="img/icon-2.png" alt=""></li>
+                <li><img src="img/icon-1.png" alt=""></li>
+            </ul>
+            <span>為了您能更好的瀏覽和體驗本站內容，瀏覽建議使用Google Chrome，分辨率建議使用1366X768以上<br/>
+保護會員隱私 保障用戶安全，CEO交易所已啟用https加密，SSL證書加密傳輸HTTPS確保數據在傳送中不被劫持改變!<br/>
+CopyRight 2017-2018 CEO交易所 WWW.BITE.CEO ALL Rights Reserved
+</span>
+        </div>
+
+
+    </div>
+</footer>
+<script src="assets/jquery/jquery.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/swipe.js"></script>
+<script>
+    $('[data-toggle="tooltip"]').tooltip();
+
+    itcast.iScroll({
+        swipeDom: document.querySelector('.product .container'),
+        swipType: 'x',
+        swipDistance: 100
+    })
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>

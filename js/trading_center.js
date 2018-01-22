@@ -1,0 +1,14 @@
+//加载header
+(()=>{
+    ajax("get","head_01.html","","text")
+        .then(html=>{
+            document.getElementById("header").innerHTML=html;
+        })
+})();
+//加载footer
+(()=>{
+    ajax("get","foot_01.html","","text")
+        .then(html=>{
+            document.getElementById("footer").innerHTML=html;
+        })
+})();
