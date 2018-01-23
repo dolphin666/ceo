@@ -14,6 +14,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
+a:hover {
+  color: #fff;
+}
 .lf {
   float: left;
 }
@@ -192,16 +195,30 @@ ul.nav.navbar-nav li {
 .swipe_d {
   position: relative;
 }
+.swipe_d .jyzx_logo {
+  float: left;
+  width: 29px;
+  height: 24px;
+  margin-left: -20px;
+  background: url("../img/ico_spcbuy.png") left top no-repeat;
+}
+.swipe_d .jyzx_wz {
+  float: right;
+  width: 80px;
+  font-size: .2rem;
+  color: #fff;
+  margin-right: -11px;
+}
 .swipe_logo {
   position: absolute;
   top: 1.72rem;
-  margin: 0px 44.5%;
   width: 100%;
 }
 .swipe_logo h3 {
   display: block;
   color: #fff;
-  margin-left: -1.18rem;
+  width: 100%;
+  text-align: center;
   font-size: 28px;
 }
 .swipe_logo span {
@@ -210,16 +227,23 @@ ul.nav.navbar-nav li {
   font-size: 18px;
   padding-bottom: .1rem;
   color: #c3cccc;
-  margin-left: -1.55rem;
+  text-align: center;
 }
-.swipe_logo img {
-  display: block;
+.swipe_logo p:nth-child(1) {
+  width: 100%;
+  text-align: center;
+}
+.swipe_logo p:nth-child(1) img {
   width: 208px;
   height: 1.47rem;
 }
-.swipe_logo a:nth-child(4) {
+.swipe_logo div {
+  width: 100%;
+}
+.swipe_logo div:nth-child(4) a {
   display: block;
-  width: 2.11rem;
+  margin: 0 auto;
+  width: 2.01rem;
   height: .5rem;
   padding: .1rem .6rem;
   -webkit-border-radius: .05rem;
@@ -229,9 +253,12 @@ ul.nav.navbar-nav li {
   font-size: .2rem;
   background: #9e323d;
 }
-.swipe_logo a:nth-child(4) img {
+.swipe_logo div:nth-child(4) a img {
   width: 208px;
   height: 47px;
+}
+.swipe_logo div:nth-child(4) a:hover {
+  background-color: #f1280f ;
 }
 /* 下载 */
 .download {
@@ -628,7 +655,14 @@ h4 {
 .paterner {
   width: 100%;
   background-color: #000;
+  height: 300px;
   overflow: hidden;
+}
+.paterner ul {
+  float: left;
+}
+.paterner .together {
+  list-style: none;
 }
 .paterner .together li {
   margin-right: 0.2rem;
@@ -644,6 +678,7 @@ h4 {
   height: 0.01rem;
   background: url('../img/Rectangle1.png') no-repeat;
   margin: 0 auto;
+  border-bottom: 1px solid red;
 }
 .tr {
   margin-left: 12%;
@@ -685,7 +720,25 @@ h4 {
   display: inline-block;
   color: #fff;
   background: #D14957;
+  width: 115px;
+  height: 28px;
+  border-radius: 13px;
+  vertical-align: middle;
   padding: 6px 20px;
+}
+#jy_table_pc .jyt_con .jyt_menu .qqsc i {
+  float: left;
+  width: 16px;
+  height: 12px;
+  margin-top: 2px;
+  background: url("../img/zhuzhuangtu.png") no-repeat;
+}
+#jy_table_pc .jyt_con .jyt_menu .qqsc b {
+  float: right;
+  width: 63px;
+  height: 14px;
+  margin-right: -9px;
+  margin-top: -18px;
 }
 #jy_table_pc .jyt_con li ul {
   width: 100%;
@@ -702,6 +755,11 @@ h4 {
   width: 100%;
   height: 42px;
   border-bottom: 1px solid #F1F1F1;
+}
+@media (max-width: 1200px) {
+  #jy_table_pc .jyt_con {
+    width: 725px;
+  }
 }
 #jy_table_pc:after {
   content: "";

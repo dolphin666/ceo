@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/partner.css">
 </head>
 <body>
 <header>
@@ -24,7 +23,7 @@
                             aria-haspopup="true" aria-expanded="false">
                         CN <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" >
                         <li><a href="#">简体中文</a></li>
                         <li><a href="#">En</a></li>
                         <li><a href="#">韩语</a></li>
@@ -41,7 +40,7 @@
                             aria-haspopup="true" aria-expanded="false">
                         简体中文 <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" >
                         <li><a href="#">简体中文</a></li>
                         <li><a href="#">English</a></li>
                         <li><a href="#">韩语</a></li>
@@ -74,26 +73,7 @@
     <!-- 导航条开始 -->
     <div class="container nva_q hidden-sm hidden-xs">
         <nav class="navbar navbar-custom">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <!--   <div class="navbar-header">
-                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-
-                                </button> -->
-
-                <!-- <a class="navbar-brand logo" href="#">
-                    <span class="wjs_icon wjs_icon_logo"></span>
-                    <span class="wjs_icon wjs_icon_word"></span>
-                </a> -->
-                <!-- </div> -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-
+            <div>
                 <img src="img/Logo.png" alt="" class="Logo">
                 <ul class="nav  navbar-nav  nav_font">
                     <li>
@@ -186,10 +166,12 @@
                     <img src="img/640340-1.jpg" class="img-responsive">
                 </a>
                 <div class="swipe_logo">
-                    <img src="img/swipe_logo.png" alt="">
+                    <p>
+                        <img src="img/swipe_logo.png" alt="">
+                    </p>
                     <h3>CEO交易所,承载用户的信赖与支持</h3>
                     <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
-                    <a href="">关于我们</a>
+                    <div><a href="">关于我们</a></div>
                 </div>
             </div>
             <div class="item">
@@ -198,10 +180,14 @@
                     <img src="img/640340-2.jpg" class="img-responsive">
                 </a>
                 <div class="swipe_logo">
-                    <img src="img/swipe_logo.png" alt="">
-                    <h3>CEO交易所,承载用户的信赖与支持</h3>
-                    <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
-                    <a href=""><b class="jyzx_logo"></b> 交易中心</a>
+                    <p>
+                        <img class="zuanshi" src="img/zuanshi.png" alt="">
+                    </p>
+                    <h3>以太坊ETH提币加速 12月6日 全新升级自动转出</h3>
+                    <span>香港CEO交易所 港元 台币 人民币 美元 日元 澳元等法币充提，提币转出记录 一键查询TXID</span>
+                    <div>
+                        <a href=""><b class="jyzx_logo"></b> <span class="jyzx_wz">交易中心</span></a>
+                    </div>
                 </div>
             </div>
             <div class="item">
@@ -210,10 +196,14 @@
                     <img src="img/640340-3.jpg" class="img-responsive">
                 </a>
                 <div class="swipe_logo">
-                    <img src="img/swipe_logo.png" alt="">
-                    <h3>CEO交易所,承载用户的信赖与支持</h3>
-                    <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
-                    <a href="">了解我们</a>
+                    <p>
+                        <img src="img/swipe_logo.png" alt="">
+                    </p>
+                    <h3>CEO交易所,以太坊ETH提币加速 12月6日 全新升级自动转出</h3>
+                    <span>站在用户的角度来精心策划 让您享受舒适体验，打造亚洲高端品牌</span>
+                    <div>
+                        <a href="">了解我们</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -261,29 +251,41 @@
                     <li>最低价(CNY)</li>
                     <li>交易量</li>
                     <li>日涨跌</li>
-                    <li><span class="qqsc"><i></i>全球市场</span></li>
+                    <li><span class="qqsc"><i></i><b>全球市场</b></span></li>
                 </ul>
             </li>
             <li>
                 <ul>
-                    <li>币种对CNY</li>
-                    <li>价格(CNY)</li>
-                    <li>最高价(CNY)</li>
-                    <li>最低价(CNY)</li>
-                    <li>交易量</li>
-                    <li>日涨跌</li>
-                    <li><i></i>全球市场</li>
+                    <li>
+                        <img src="" alt="">
+                        <b>BTC</b>/
+                        CNY
+                    </li>
+                    <li>
+                        <b class="green_bold">74102.00</b>
+                    </li>
+                    <li>101200.00</li>
+                    <li>95000.00</li>
+                    <li>180.6013 BTC</li>
+                    <li class="font_green">-2.41 %</li>
+                    <li class="font_red">专业交易</li>
                 </ul>
             </li>
             <li>
                 <ul>
-                    <li>币种对CNY</li>
-                    <li>价格(CNY)</li>
-                    <li>最高价(CNY)</li>
-                    <li>最低价(CNY)</li>
-                    <li>交易量</li>
-                    <li>日涨跌</li>
-                    <li><i></i>全球市场</li>
+                    <li>
+                        <img src="" alt="">
+                        <b>BTC</b>/
+                        CNY
+                    </li>
+                    <li>
+                        <b class="red_bold">74102.00</b>
+                    </li>
+                    <li>101200.00</li>
+                    <li>95000.00</li>
+                    <li>180.6013 BTC</li>
+                    <li class="font_red">-2.41 %</li>
+                    <li class="font_red">专业交易</li>
                 </ul>
             </li>
         </ul>
@@ -525,8 +527,6 @@
 
 <div class="paterner">
     <h3>合作伙伴</h3>
-    <div class="container_">
-    </div>
     <div class="tr">
         <ul class="together">
             <li>
