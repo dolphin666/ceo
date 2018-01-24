@@ -14,9 +14,11 @@ a {
   text-decoration: none;
   color: #fff;
 }
-a:hover{
-  color:#fff;
+
+a:hover {
+  color: #fff;
 }
+
 .lf {
   float: left
 }
@@ -57,6 +59,7 @@ a:hover{
   }
 }
 
+/*********图层蒙版**********/
 #mengban {
   width: 100%;
   height: 100%;
@@ -145,6 +148,7 @@ ul.nav.navbar-nav li {
   padding-left: 0.09rem;
 }
 
+/***********轮播图**********/
 .swipe_d {
   width: 100%;
   position: relative;
@@ -160,6 +164,8 @@ ul.nav.navbar-nav li {
   border: none;
   width: 100%;
 }
+
+/*********交易表格*********/
 
 .swipe_nav_q {
   width: 100%;
@@ -177,8 +183,11 @@ ul.nav.navbar-nav li {
   color: #fff;
   font-size: 0.18rem;
   font-family: "苹方";
-  @media (max-width: 991px) {
+  @media (max-width: 639px) {
     font-size: 12px;
+  }
+  @media (min-width: 640px) and (max-width: 991px) {
+    font-size: 16px
   }
 }
 
@@ -191,24 +200,42 @@ ul.nav.navbar-nav li {
   }
 }
 
+.swipe_menu div {
+  p {
+    display: none;
+    border-top: 1px solid #FFF;
+    margin: 0 auto;
+    padding: 0;
+    width: 50px;
+    height: 23px;
+    background: #1d1e26;
+    margin-top: -23px;
+    b {
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #FFF;
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+    }
+  }
+}
+
 .swipe_nav_q .row .one:hover {
   cursor: pointer;
   background-color: #1d1e26;
 }
 
-.swipe_nav_q .row .two:hover {
+.swipe_nav_q .row .one:hover, .swipe_nav_q .row .two:hover, .swipe_nav_q .row .three:hover, .swipe_nav_q .row .four:hover {
   cursor: pointer;
   background-color: #1d1e26;
 }
 
-.swipe_nav_q .row .three:hover {
-  cursor: pointer;
-  background-color: #1d1e26;
-}
-
-.swipe_nav_q .row .four:hover {
-  cursor: pointer;
-  background-color: #1d1e26;
+.swipe_nav_q .row .one:hover .one p {
+  display: block;
 }
 
 .swipe_nav_q .active {
@@ -218,19 +245,22 @@ ul.nav.navbar-nav li {
 
 .swipe_d {
   position: relative;
-  .jyzx_logo{
+
+  /*****交易中心*****/
+
+  .jyzx_logo {
     float: left;
-    width:29px;
-    height:24px;
+    width: 29px;
+    height: 24px;
     margin-left: -20px;
     background: url("../img/ico_spcbuy.png") left top no-repeat;
   }
-  .jyzx_wz{
+  .jyzx_wz {
     float: right;
-    width:80px;
+    width: 80px;
     font-size: .2rem;
-    color:#fff;
-    margin-right:-11px;
+    color: #fff;
+    margin-right: -11px;
   }
 }
 
@@ -259,7 +289,7 @@ ul.nav.navbar-nav li {
   //margin-left: -1.55rem;
 }
 
-.swipe_logo p:nth-child(1){
+.swipe_logo p:nth-child(1) {
   width: 100%;
   text-align: center;
   img {
@@ -267,12 +297,14 @@ ul.nav.navbar-nav li {
     height: 1.47rem;
   }
 }
-.swipe_logo div{
-  width:100%;
+
+.swipe_logo div {
+  width: 100%;
 }
+
 .swipe_logo div:nth-child(4) a {
   display: block;
-  margin:0 auto;
+  margin: 0 auto;
   width: 2.01rem;
   height: .5rem;
   padding: .1rem .6rem;
@@ -288,11 +320,12 @@ ul.nav.navbar-nav li {
   }
 }
 
-.swipe_logo div:nth-child(4) a:hover{
-background-color:#f1280f ;
+.swipe_logo div:nth-child(4) a:hover {
+  background-color: #f1280f;
 }
 
-/* 下载 */
+/**********下载**********/
+
 .download {
   width: 100%;
   height: 7.6rem;
@@ -304,7 +337,7 @@ background-color:#f1280f ;
 
 .download_c {
   margin: auto;
-  width: 11.6rem;
+  width: 10.8rem;
   position: relative;
 }
 
@@ -389,13 +422,6 @@ background-color:#f1280f ;
   position: relative;
 }
 
-.Transaction .swipe_logo {
-  margin-top: 3.8rem;
-  margin-left: -5%;
-  height: 1.68rem;
-  width: 2.5rem;
-}
-
 .Transaction .fuwu {
   position: absolute;
   top: 65%;
@@ -403,10 +429,12 @@ background-color:#f1280f ;
   transform: translate(-50%, -50%);
 }
 
-.Transaction .tuoyuan {
+.Transaction .swipe_logo_02 {
   position: absolute;
   bottom: 0;
   left: 50%;
+  width: 422px;
+  height: 211px;
   transform: translateX(-50%);
 }
 
@@ -444,7 +472,7 @@ background-color:#f1280f ;
 
 .Information .Content {
   margin: 0 auto;
-  width: 65%;
+  width: 950px;
   margin-bottom: 0.2rem;
 }
 
@@ -762,16 +790,17 @@ background-color:#f1280f ;
 }
 
 /* 合作伙伴 */
-.paterner{
+.paterner {
   width: 100%;
   background-color: #000;
   height: 300px;
   overflow: hidden;
-  ul{
+  ul {
     float: left;
   }
 }
-.paterner .together{
+
+.paterner .together {
   list-style: none;
 }
 
@@ -795,8 +824,6 @@ background-color:#f1280f ;
   border-bottom: 1px solid red;
 }
 
-
-
 .tr {
   margin-left: 12%;
   width: 100%;
@@ -806,48 +833,50 @@ background-color:#f1280f ;
 #jy_table_pc {
   width: 100%;
   padding-top: 25px;
+  padding-bottom: 50px;
   text-align: left;
   background: #fff;
   box-sizing: border-box;
-  ul{
+  ul {
     list-style-type: none;
-    li{
+    li {
       float: left;
     }
   }
   .jyt_con {
-    width: 62.5%;
+    width: 950px;
     margin: 0 auto;
     clear: both;
-    .jyt_con::after{
+    .jyt_con::after {
       content: "";
       clear: both;
       display: block;
     }
-    .jyt_menu{
+    .jyt_menu {
       height: 50px;
-      width: 100%;
-      color:#626262;
+      width: 950px;
+      margin:0 auto;
+      color: #626262;
       font-size: 14px;
       font-weight: bold;
       background: #f9f9f9;
-      .qqsc{
+      .qqsc {
         display: inline-block;
-        color:#fff;
+        color: #fff;
         background: #D14957;
         width: 115px;
         height: 28px;
         border-radius: 13px;
         vertical-align: middle;
         padding: 6px 20px;
-        i{
+        i {
           float: left;
           width: 16px;
           height: 12px;
           margin-top: 2px;
           background: url("../img/zhuzhuangtu.png") no-repeat;
         }
-        b{
+        b {
           float: right;
           width: 63px;
           height: 14px;
@@ -857,28 +886,127 @@ background-color:#f1280f ;
       }
     }
     li ul {
-      width: 100%;
-      float: left;
+      width: 950px;
+      margin:0 auto;
       font-size: 14px;
-      li{
-        width:14.2857%;
-        height:28px;
-        padding-left:18px;
+      li {
+        width: 14.2857%;
+        height: 28px;
         line-height: 52px;
       }
+      li:nth-child(1){
+        padding-left: 8px;
+      }
     }
-    >li{
-      width:100%;
-      height:42px;
-      border-bottom:1px solid #F1F1F1;
+    > li {
+      width: 100%;
+      height: 42px;
+      text-align: left;
+      border-bottom: 1px solid #F1F1F1;
+    }
+    //@media (max-width:1305px) and(min-width:960px){
+    //  ul{
+    //    width:890px;
+    //    margin:0 auto;
+    //  }
+    //}
+  }
+  //@media (max-width: 1200px) {
+  //  .jyt_con {
+  //    width: 725px
+  //  }
+  //}
+  .jyt_detail {
+    .coin {
+      width:130px;
+      i {
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        margin: -5px 0px 0 5px;
+        vertical-align: middle;
+      }
+      i.coin-btc{
+        background: url("../img/coin-btc.png");
+      }
     }
   }
-  @media (max-width:1200px){.jyt_con{width:725px}};
+  .glyphicon-arrow-down{
+    color: #3FC18F;
+    position: relative;
+    animation:mymove 1.5s infinite;
+    -webkit-animation:mymove 1.5s infinite; /*Safari and Chrome*/
+    -moz-animation:mymove 1.5s infinite; /* Firefox */
+    -o-animation:mymove 1.5s infinite; /* Opera */
+  }
+  @keyframes mymove
+  {
+    from {top:0px;}
+    to {top:5px;}
+  }
+  @-o-keyframes mymove /* Opera */
+  {
+    from {top:0px;}
+    to {top:5px;}
+  }
+  @-moz-keyframes mymove
+  {
+    from {top:0px;}
+    to {top:5px;}
+  }
+  @-webkit-keyframes mymove /*Safari and Chrome*/
+  {
+    from {top:0px;}
+    to {top:5px;}
+  }
+
+  .glyphicon-arrow-up{
+    color: #DF211E;
+    position: relative;
+    animation:mymove1 1.5s infinite;
+    -o-animation:mymove1 1.5s infinite;
+    -moz-animation:mymove1 1.5s infinite;
+    -webkit-animation:mymove1 1.5s infinite; /*Safari and Chrome*/
+  }
+
+  @keyframes mymove1
+  {
+    from {top:0px;}
+    to {top:-5px;}
+  }
+  @-o-keyframes mymove1
+  {
+    from {top:0px;}
+    to {top:-5px;}
+  }
+  @-moz-keyframes mymove1
+  {
+    from {top:0px;}
+    to {top:-5px;}
+  }
+  @-webkit-keyframes mymove1 /*Safari and Chrome*/
+  {
+    from {top:0px;}
+    to {top:-5px;}
+  }
 }
-#jy_table_pc:after{
+
+#jy_table_pc:after {
   content: "";
   display: block;
   clear: both;
+}
+.green_bold{
+  color: #3FC18F;
+}
+.red_bold{
+  color: #DF211E;
+}
+.font_red{
+  color: #E43B3E;
+}
+.font_green{
+  color: #4FC492;
 }
 
 

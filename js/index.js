@@ -11,4 +11,13 @@ $(document).ready(function(){
     });
 });
 
+/******交易表格头部动效******/
 
+$(document).ready(function(){
+    $(".swipe_menu div").mouseenter(function(){
+        $(this).children("p").css("display","block");
+    });
+    $(".swipe_menu div").mouseleave(function(){
+        $(this).children("p").css("display","none");
+    });
+});

@@ -4,27 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <style>
-        .div{
+        .div1{
             background-color:black;
             border: 1px solid red;
             width:100px;
             height:100px;
-            display:none
         }
     </style>
 </head>
 <body>
-<button>点击</button>
-<div class="div"></div>
-<script src="assets/jquery/jquery.js"></script>
-<script language="JavaScript">
-    $("button").click(function(){
-        if($(".div").css("display")=="none"){
-            $(".div").show();
-        }else{
-            $(".div").hide();
-        }
-    });
-</script>
+<div class="div1"></div>
+<div class="div2"></div>
 </body>
 </html>
+
+
+
+
+animation:mymove 2s infinite;
+-webkit-animation:mymove 2s infinite; /*Safari and Chrome*/
+}
+
+@keyframes mymove
+{
+from {left:0px;}
+to {left:200px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {left:0px;}
+to {left:200px;}
+}

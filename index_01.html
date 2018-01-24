@@ -123,7 +123,8 @@
         </nav>
     </div>
 </header>
-<div class="m_menu_list" style="display: none">
+<!--移动端头部下拉列表-->
+<div class="m_menu_list hidden-lg hidden-md" style="display: none">
     <span class="m_list_sj"></span>
     <ul>
         <li>
@@ -146,10 +147,10 @@
         </li>
     </ul>
 </div>
-<div id="mengban" class="mengban" style="display: none"></div>
-<!-- 轮播图 -->
+<!--图层蒙版-->
+<div id="mengban" class="mengban  hidden-lg hidden-md" style="display: none"></div>
 <!-- 轮播图开始 -->
-<div class="swipe_d">
+<div class="swipe_d hidden-sm hidden-xs">
     <div id="carousel-example-generic" class="carousel slide swipe" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators hidden-sm hidden-xs  yuan">
@@ -230,14 +231,14 @@
 
 </div>
 
-<!--轮播图下导航-->
+<!--交易表格-->
 <div class="swipe_nav_q">
-    <div class="row">
+    <div class="row swipe_menu">
         <div class="col-md-2 hidden-xs hidden-sm"></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 one active"><span>对CNY交易区</span></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 two"><span>对USDT交易区</span></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 three"><span>对BTC交易区</span></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 four"><span>对KKD交易区</span></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 one active"><span>对CNY交易区</span><p><b></b></p></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 two"><span>对USDT交易区</span><p><b></b></p></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 three"><span>对BTC交易区</span><p><b></b></p></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 four"><span>对KKD交易区</span><p><b></b></p></div>
         <div class="col-md-2 hidden-xs hidden-sm"></div>
 
     </div>
@@ -254,15 +255,16 @@
                     <li><span class="qqsc"><i></i><b>全球市场</b></span></li>
                 </ul>
             </li>
-            <li>
+            <li class="jyt_detail">
                 <ul>
-                    <li>
-                        <img src="" alt="">
-                        <b>BTC</b>/
+                    <li class="coin">
+                        <i class="coin-btc"></i>
+                        <b>BTC</b> /
                         CNY
                     </li>
                     <li>
                         <b class="green_bold">74102.00</b>
+                        <i class="glyphicon glyphicon-arrow-down"></i>
                     </li>
                     <li>101200.00</li>
                     <li>95000.00</li>
@@ -271,15 +273,16 @@
                     <li class="font_red">专业交易</li>
                 </ul>
             </li>
-            <li>
+            <li class="jyt_detail">
                 <ul>
-                    <li>
-                        <img src="" alt="">
-                        <b>BTC</b>/
+                    <li class="coin">
+                        <i class="coin-btc"></i>
+                        <b>BTC</b> /
                         CNY
                     </li>
                     <li>
                         <b class="red_bold">74102.00</b>
+                        <i class="glyphicon glyphicon-arrow-up"></i>
                     </li>
                     <li>101200.00</li>
                     <li>95000.00</li>
@@ -290,14 +293,15 @@
             </li>
         </ul>
     </div>
+    <div id="jy_table_m" class="hidden-lg hidden-md"></div>
 </div>
 
 </div>
 
 <!-- 下载 -->
-<div class="download">
+<div class="download hidden-sm hidden-xs">
     <div class="download_c">
-        <img class="phone" src="img/iPhone-6-_-4_02.png" alt="" class="img-responsive">
+        <img class="phone img-responsive" src="img/iPhone-6-_-4_02.png" alt="" class="img-responsive">
 
         <div class="download_r">
             <div class="app">
@@ -314,23 +318,20 @@
     </div>
 </div>
 
-
 <!-- 交易平台 -->
-<div class="Transaction">
+<div class="Transaction hidden-sm hidden-xs">
     <h3>CEO交易平台-金融级别安全交易平台</h3>
     <span>4年以上的金融产品运营风控经验、技术安全防护、数字资产90%存储多重签名冷钱包</span>
     <!-- <div class="Service"> -->
     <div>
         <img src="img/Service.png" alt="" class="fuwu">
-
-        <img src="img/未标题-1_03.png" alt="" class="tuoyuan">
-        <img src="img/swipe_logo.png" alt="" class="swipe_logo">
+        <img src="img/swipe_logo_01.png" alt="" class="swipe_logo_02">
     </div>
     <!-- </div> -->
 </div>
 
 <!-- 官方公告行业资讯 -->
-<div class="Information">
+<div class="Information hidden-sm hidden-xs">
     <div class="Content">
         <div class="Information_left">
             <div class="Information_left_top">
@@ -447,7 +448,7 @@
 </div>
 
 <!-- 新手帮助 -->
-<div class="Novice_help">
+<div class="Novice_help hidden-sm hidden-xs">
     <div class="Novice_help_left">
   <span class="Doubt">
         <img src="img/Doubt.png" alt="">
@@ -524,8 +525,8 @@
     <div class="Triangle"><img src="img/Triangle.png" alt=""></div>
 </div>
 
-
-<div class="paterner">
+<!-- 合作伙伴 -->
+<div class="paterner hidden-sm hidden-xs">
     <h3>合作伙伴</h3>
     <div class="tr">
         <ul class="together">
@@ -556,56 +557,10 @@
     </div>
 </div>
 
-
-<footer>
+<!-- 底部 -->
+<footer class="hidden-sm hidden-xs">
 
     <div class="footer_q">
-        <!--   <div class="row footer  col-md-offset-1" style="text-align: center;">
-            <div class="col-md-3 Logo_bot">
-              <img src="images/code.jpg" alt="">
-            </div>
-            <div class="col-md-2  hidden-sm hidden-xs">
-              <ul>
-                <li><h3>关于平台</h3></li>
-                <li>公司简介</li>
-                <li>联络方式</li>
-                <li>用户注册</li>
-
-              </ul>
-            </div>
-            <div class="col-md-2 hidden-xs hidden-sm">
-
-              <ul>
-                <li><h3>下载/支持</h3></li>
-                <li>钱包下载</li>
-                <li>新品上线</li>
-                <li>费用说明</li>
-              </ul>
-            </div>
-            <div class="col-md-2 hidden-xs hidden-sm">
-
-              <ul>
-                <li><h3>客户服务</h3></li>
-                <li>新人帮助</li>
-                <li>充值帮助</li>
-                <li>推荐奖励</li>
-              </ul>
-            </div>
-            <div class="col-md-3 hidden-xs hidden-sm hidden-md four">
-
-              <ul>
-                <li><h3>联系我们</h3></li>
-                <li>美国:sunny@zd.com</li>
-                <li>韩国:maple@zd.com</li>
-                <li class="li_3">迪拜:nassar.achkar@zd.com</li>
-                <li class="li_4">瑞士:jimmy@zd.com</li>
-                <li class="li_5">加拿大:sunny.sun@zd.com</li>
-                <li class="li_6">其他地区:support@zd.com</li>
-              </ul>
-            </div>
-          </div> -->
-
-
         <div class="footer">
             <div class="Logo_bot">
                 <img src="img/ceoL.png" alt="">

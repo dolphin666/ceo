@@ -52,6 +52,7 @@ a:hover {
 .m_menu .m_menu_btn:hover .m_menu_list {
   display: block;
 }
+/*********图层蒙版**********/
 #mengban {
   width: 100%;
   height: 100%;
@@ -132,6 +133,7 @@ a:hover {
 ul.nav.navbar-nav li {
   padding-left: 0.09rem;
 }
+/***********轮播图**********/
 .swipe_d {
   width: 100%;
   position: relative;
@@ -145,6 +147,7 @@ ul.nav.navbar-nav li {
   border: none;
   width: 100%;
 }
+/*********交易表格*********/
 .swipe_nav_q {
   width: 100%;
   background-color: #262831;
@@ -159,9 +162,14 @@ ul.nav.navbar-nav li {
   font-size: 0.18rem;
   font-family: "苹方";
 }
-@media (max-width: 991px) {
+@media (max-width: 639px) {
   .row {
     font-size: 12px;
+  }
+}
+@media (min-width: 640px) and (max-width: 991px) {
+  .row {
+    font-size: 16px;
   }
 }
 .swipe_nav_q .row {
@@ -172,21 +180,40 @@ ul.nav.navbar-nav li {
 .swipe_nav_q .row div {
   padding: 0;
 }
+.swipe_menu div p {
+  display: none;
+  border-top: 1px solid #FFF;
+  margin: 0 auto;
+  padding: 0;
+  width: 50px;
+  height: 23px;
+  background: #1d1e26;
+  margin-top: -23px;
+}
+.swipe_menu div p b {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
 .swipe_nav_q .row .one:hover {
   cursor: pointer;
   background-color: #1d1e26;
 }
-.swipe_nav_q .row .two:hover {
-  cursor: pointer;
-  background-color: #1d1e26;
-}
-.swipe_nav_q .row .three:hover {
-  cursor: pointer;
-  background-color: #1d1e26;
-}
+.swipe_nav_q .row .one:hover,
+.swipe_nav_q .row .two:hover,
+.swipe_nav_q .row .three:hover,
 .swipe_nav_q .row .four:hover {
   cursor: pointer;
   background-color: #1d1e26;
+}
+.swipe_nav_q .row .one:hover .one p {
+  display: block;
 }
 .swipe_nav_q .active {
   cursor: pointer;
@@ -194,6 +221,7 @@ ul.nav.navbar-nav li {
 }
 .swipe_d {
   position: relative;
+  /*****交易中心*****/
 }
 .swipe_d .jyzx_logo {
   float: left;
@@ -258,9 +286,9 @@ ul.nav.navbar-nav li {
   height: 47px;
 }
 .swipe_logo div:nth-child(4) a:hover {
-  background-color: #f1280f ;
+  background-color: #f1280f;
 }
-/* 下载 */
+/**********下载**********/
 .download {
   width: 100%;
   height: 7.6rem;
@@ -269,7 +297,7 @@ ul.nav.navbar-nav li {
 }
 .download_c {
   margin: auto;
-  width: 11.6rem;
+  width: 10.8rem;
   position: relative;
 }
 .download_c .phone {
@@ -341,22 +369,18 @@ ul.nav.navbar-nav li {
   background: url('../img/Transaction-bg.png') no-repeat;
   position: relative;
 }
-.Transaction .swipe_logo {
-  margin-top: 3.8rem;
-  margin-left: -5%;
-  height: 1.68rem;
-  width: 2.5rem;
-}
 .Transaction .fuwu {
   position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.Transaction .tuoyuan {
+.Transaction .swipe_logo_02 {
   position: absolute;
   bottom: 0;
   left: 50%;
+  width: 422px;
+  height: 211px;
   transform: translateX(-50%);
 }
 .Transaction h3 {
@@ -389,7 +413,7 @@ ul.nav.navbar-nav li {
 }
 .Information .Content {
   margin: 0 auto;
-  width: 65%;
+  width: 950px;
   margin-bottom: 0.2rem;
 }
 .Information .Content .Information_left {
@@ -688,6 +712,7 @@ h4 {
 #jy_table_pc {
   width: 100%;
   padding-top: 25px;
+  padding-bottom: 50px;
   text-align: left;
   background: #fff;
   box-sizing: border-box;
@@ -699,7 +724,7 @@ h4 {
   float: left;
 }
 #jy_table_pc .jyt_con {
-  width: 62.5%;
+  width: 950px;
   margin: 0 auto;
   clear: both;
 }
@@ -710,7 +735,8 @@ h4 {
 }
 #jy_table_pc .jyt_con .jyt_menu {
   height: 50px;
-  width: 100%;
+  width: 950px;
+  margin: 0 auto;
   color: #626262;
   font-size: 14px;
   font-weight: bold;
@@ -741,28 +767,138 @@ h4 {
   margin-top: -18px;
 }
 #jy_table_pc .jyt_con li ul {
-  width: 100%;
-  float: left;
+  width: 950px;
+  margin: 0 auto;
   font-size: 14px;
 }
 #jy_table_pc .jyt_con li ul li {
   width: 14.2857%;
   height: 28px;
-  padding-left: 18px;
   line-height: 52px;
+}
+#jy_table_pc .jyt_con li ul li:nth-child(1) {
+  padding-left: 8px;
 }
 #jy_table_pc .jyt_con > li {
   width: 100%;
   height: 42px;
+  text-align: left;
   border-bottom: 1px solid #F1F1F1;
 }
-@media (max-width: 1200px) {
-  #jy_table_pc .jyt_con {
-    width: 725px;
+#jy_table_pc .jyt_detail .coin {
+  width: 130px;
+}
+#jy_table_pc .jyt_detail .coin i {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin: -5px 0px 0 5px;
+  vertical-align: middle;
+}
+#jy_table_pc .jyt_detail .coin i.coin-btc {
+  background: url("../img/coin-btc.png");
+}
+#jy_table_pc .glyphicon-arrow-down {
+  color: #3FC18F;
+  position: relative;
+  animation: mymove 1.5s infinite;
+  -webkit-animation: mymove 1.5s infinite;
+  /*Safari and Chrome*/
+  -moz-animation: mymove 1.5s infinite;
+  /* Firefox */
+  -o-animation: mymove 1.5s infinite;
+  /* Opera */
+}
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 5px;
+  }
+}
+@-o-keyframes mymove {
+  /* Opera */
+  from {
+    top: 0px;
+  }
+  to {
+    top: 5px;
+  }
+}
+@-moz-keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 5px;
+  }
+}
+@-webkit-keyframes mymove {
+  /*Safari and Chrome*/
+  from {
+    top: 0px;
+  }
+  to {
+    top: 5px;
+  }
+}
+#jy_table_pc .glyphicon-arrow-up {
+  color: #DF211E;
+  position: relative;
+  animation: mymove1 1.5s infinite;
+  -o-animation: mymove1 1.5s infinite;
+  -moz-animation: mymove1 1.5s infinite;
+  -webkit-animation: mymove1 1.5s infinite;
+  /*Safari and Chrome*/
+}
+@keyframes mymove1 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -5px;
+  }
+}
+@-o-keyframes mymove1 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -5px;
+  }
+}
+@-moz-keyframes mymove1 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -5px;
+  }
+}
+@-webkit-keyframes mymove1 {
+  /*Safari and Chrome*/
+  from {
+    top: 0px;
+  }
+  to {
+    top: -5px;
   }
 }
 #jy_table_pc:after {
   content: "";
   display: block;
   clear: both;
+}
+.green_bold {
+  color: #3FC18F;
+}
+.red_bold {
+  color: #DF211E;
+}
+.font_red {
+  color: #E43B3E;
+}
+.font_green {
+  color: #4FC492;
 }
