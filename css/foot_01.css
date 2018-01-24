@@ -1,24 +1,31 @@
-/*
-* @Author: Administrator
-* @Date:   2018-01-12 14:15:15
-* @Last Modified by:   Administrator
-* @Last Modified time: 2018-01-17 18:09:01
-*/
 #footer {
   width: 100%;
   height: 395px;
   background: #262831;
 }
+.footer_q {
+  width: 100%;
+  overflow: hidden;
+}
+.footer_q a {
+  color: #bdbdbf;
+  text-decoration: none;
+}
 .footer {
-  width: 1148px;
+  width: 950px;
   height: 233px;
-  padding-top: 52px;
+  padding-top: 26px;
   padding-bottom: 15px;
   border-bottom: 1px solid #2C2F39;
   margin: 0 auto;
 }
+.footer_q:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .footer ul {
-  margin-top: 0.4rem;
+  margin-top: 40px;
 }
 .footer ul li {
   cursor: pointer;
@@ -36,7 +43,8 @@
 }
 .footer .list {
   float: right;
-  width: 880px;
+  width: 710px;
+  color: #fff;
   padding-left: 40px;
 }
 .footer .Logo_bot {
@@ -52,51 +60,60 @@
   height: 122px;
 }
 .footer_bottom {
+  width: 100%;
   height: 162px;
   text-align: center;
+  font-size: 14px;
+  padding-top: 18px;
   clear: both;
 }
-.footer_bottom ul {
-  top: -1.1rem;
-  margin: 0;
+.footer_bottom:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer_bottom ul.flag-icon {
+  width: 300px;
+  height: 27px;
+  top: -110px;
+  margin: 0 auto;
   padding: 0;
 }
 .footer_bottom ul li {
+  float: left;
   list-style: none;
   color: #fff;
   display: inline-block;
-  margin-right: 0.1rem;
-  padding: 7.5px 5px;
+  margin-right: 10px;
 }
 .footer_bottom ul li img {
   width: 30px;
   height: 20px;
 }
-.footer_bottom span {
+.footer_bottom p {
   display: block;
-  margin-top: 0.5rem;
   color: #5E6173;
   font-size: 14px;
   font-weight: bold;
 }
 .four h3 {
-  width: 0.9rem;
+  width: 90px;
 }
 .footer ul {
   float: left;
   margin: 0;
   padding-left: 0;
-  padding-right: 100px;
+  padding-right: 55px;
 }
 .footer ul li {
   padding-bottom: 2px;
 }
 .footer ul li {
-  font-size: 0.14rem;
+  font-size: 14px;
 }
 .bottom_x {
-  height: 0.02rem;
+  height: 2px;
   width: 60%;
   background-color: #2f323d;
-  margin: 0.2rem auto;
+  margin: 20px auto;
 }

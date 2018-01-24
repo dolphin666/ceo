@@ -21,3 +21,12 @@ $(document).ready(function(){
         $(this).children("p").css("display","none");
     });
 });
+
+//加载footer
+// (()=>{
+//     ajax("get","foot_01.html","","text")
+//         .then(html=>{
+//             document.getElementById("footer").innerHTML=html;
+//         })
+// })();
+$("#footer").load("foot_01.html");

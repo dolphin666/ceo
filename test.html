@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <style>
-        .div1{
-            background-color:black;
-            border: 1px solid red;
-            width:100px;
-            height:100px;
-        }
-    </style>
+    <title>Bootstrap 实例 - 轮播（Carousel）插件的标题</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="div1"></div>
-<div class="div2"></div>
+
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/wp-content/uploads/2014/07/slide1.png" alt="First slide">
+            <div class="carousel-caption">标题 1</div>
+        </div>
+        <div class="item">
+            <img src="/wp-content/uploads/2014/07/slide2.png" alt="Second slide">
+            <div class="carousel-caption">标题 2</div>
+        </div>
+        <div class="item">
+            <img src="/wp-content/uploads/2014/07/slide3.png" alt="Third slide">
+            <div class="carousel-caption">标题 3</div>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">&rsaquo;</a>
+</div>
+
 </body>
 </html>
-
-
-
-
-animation:mymove 2s infinite;
--webkit-animation:mymove 2s infinite; /*Safari and Chrome*/
-}
-
-@keyframes mymove
-{
-from {left:0px;}
-to {left:200px;}
-}
-
-@-webkit-keyframes mymove /*Safari and Chrome*/
-{
-from {left:0px;}
-to {left:200px;}
-}

@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/foot_01.css">
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
                             aria-haspopup="true" aria-expanded="false">
                         CN <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" >
+                    <ul class="dropdown-menu">
                         <li><a href="#">简体中文</a></li>
                         <li><a href="#">En</a></li>
                         <li><a href="#">韩语</a></li>
@@ -40,7 +39,7 @@
                             aria-haspopup="true" aria-expanded="false">
                         简体中文 <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" >
+                    <ul class="dropdown-menu">
                         <li><a href="#">简体中文</a></li>
                         <li><a href="#">English</a></li>
                         <li><a href="#">韩语</a></li>
@@ -231,14 +230,18 @@
 
 </div>
 
-<!--交易表格-->
-<div class="swipe_nav_q">
+<!--交易表格PC-->
+<div class="swipe_nav_q hidden-sm hidden-xs">
     <div class="row swipe_menu">
         <div class="col-md-2 hidden-xs hidden-sm"></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 one active"><span>对CNY交易区</span><p><b></b></p></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 two"><span>对USDT交易区</span><p><b></b></p></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 three"><span>对BTC交易区</span><p><b></b></p></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 four"><span>对KKD交易区</span><p><b></b></p></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 one active"><span>对CNY交易区</span>
+            <p><b></b></p></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 two"><span>对USDT交易区</span>
+            <p><b></b></p></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 three"><span>对BTC交易区</span>
+            <p><b></b></p></div>
+        <div class="col-md-2 col-sm-3 col-xs-3 four"><span>对KKD交易区</span>
+            <p><b></b></p></div>
         <div class="col-md-2 hidden-xs hidden-sm"></div>
 
     </div>
@@ -270,7 +273,7 @@
                     <li>95000.00</li>
                     <li>180.6013 BTC</li>
                     <li class="font_green">-2.41 %</li>
-                    <li class="font_red">专业交易</li>
+                    <li class="font_red">专业交易 <span class="gp_up"></span></li>
                 </ul>
             </li>
             <li class="jyt_detail">
@@ -288,14 +291,42 @@
                     <li>95000.00</li>
                     <li>180.6013 BTC</li>
                     <li class="font_red">-2.41 %</li>
-                    <li class="font_red">专业交易</li>
+                    <li class="font_red">专业交易 <span class="gp_up"></span></li>
                 </ul>
             </li>
         </ul>
     </div>
-    <div id="jy_table_m" class="hidden-lg hidden-md"></div>
 </div>
-
+<!-- 移动端图表 -->
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 50 * (clientWidth / 375) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<div id="jy_table_m" class="hidden-lg hidden-md">
+    <ul class="t_title">
+        <li>
+            <h3>对CYN交易</h3>
+        </li>
+        <li>
+            <h3>对BTC交易</h3>
+        </li>
+        <li>
+            <h3>对CEO交易</h3>
+        </li>
+        <li>
+            <h3>对HKD交易</h3>
+        </li>
+    </ul>
 </div>
 
 <!-- 下载 -->
@@ -465,6 +496,7 @@
 
     </div>
     <div class="Novice_help_right">
+        <img class="triangle" src="img/Triangle.png">
         <div class="Withdrawals">
             <h3><span>如何</span>充值提现</h3>
             <div class="top_ups">
@@ -479,8 +511,7 @@
                 </ul>
             </div>
         </div>
-
-        <div class=" ">
+        <div class="Withdrawals">
             <h3><span>实名</span>认证</h3>
             <div class="top_ups">
                 <ul>
@@ -488,14 +519,11 @@
                     <li>|</li>
                     <li>高级实名认证</li>
                     <li>|</li>
-                    <li>视频认证</li>
+                    <li>食品认证</li>
                 </ul>
             </div>
-            <div class="but"></div>
         </div>
-        <br/>
-
-        <div class="Withdrawals_2">
+        <div class="Withdrawals">
             <h3><span>交易</span>委托</h3>
             <div class="top_ups">
                 <ul>
@@ -506,128 +534,84 @@
                     <li>API文档</li>
                 </ul>
             </div>
-            <div class="but"></div>
         </div>
-        <br/>
-
-        <div class="Withdrawals_3">
+        <div class="Withdrawals">
             <h3><span>推荐</span>奖励</h3>
             <div class="top_ups">
                 <ul>
-                    <li>邀请人奖励如何获得？</li>
+                    <li>邀请人奖励如何获得</li>
                 </ul>
             </div>
-            <div class="but"></div>
         </div>
 
     </div>
 
-    <div class="Triangle"><img src="img/Triangle.png" alt=""></div>
 </div>
 
 <!-- 合作伙伴 -->
 <div class="paterner hidden-sm hidden-xs">
-    <h3>合作伙伴</h3>
-    <div class="tr">
-        <ul class="together">
-            <li>
-                <img src="img/one97.png" alt="">
-            </li>
-            <li>
-                <img src="img/two.png" alt="">
-            </li>
-            <li>
-                <img src="img/three.png" alt="">
-            </li>
-            <li><img src="img/four.png" alt=""></li>
-            <li><img src="img/five.png" alt=""></li>
-            <li><img src="img/six.png" alt=""></li>
-            <li><img src="img/Eight.png" alt=""></li>
-            <li><img src="img/Nine.png" alt=""></li>
-            <br>
-            <li><img src="img/Ten.png" alt=""></li>
-            <li><img src="img/one97.png" alt=""></li>
-            <li><img src="img/two.png" alt=""></li>
-            <li><img src="img/three.png" alt=""></li>
-            <li><img src="img/four.png" alt=""></li>
-            <li><img src="img/five.png" alt=""></li>
-            <li><img src="img/six.png" alt=""></li>
-            <li><img src="img/Eight.png" alt=""></li>
-        </ul>
+    <div class="paterner_title"><h3>合作伙伴</h3></div>
+    <div id="myCarousel" class="carousel slide">
+        <div class="tr carousel-inner">
+            <ul class="together item active">
+                <li>
+                    <img src="img/one97.png" alt="">
+                </li>
+                <li>
+                    <img src="img/two.png" alt="">
+                </li>
+                <li>
+                    <img src="img/three.png" alt="">
+                </li>
+                <li><img src="img/four.png" alt=""></li>
+                <li><img src="img/five.png" alt=""></li>
+                <li><img src="img/six.png" alt=""></li>
+                <li><img src="img/Eight.png" alt=""></li>
+                <li><img src="img/Nine.png" alt=""></li>
+                <li><img src="img/Ten.png" alt=""></li>
+                <li><img src="img/one97.png" alt=""></li>
+                <li><img src="img/two.png" alt=""></li>
+                <li><img src="img/three.png" alt=""></li>
+                <li><img src="img/four.png" alt=""></li>
+                <li><img src="img/five.png" alt=""></li>
+                <li><img src="img/six.png" alt=""></li>
+                <li><img src="img/Eight.png" alt=""></li>
+            </ul>
+            <ul class="together item">
+                <li>
+                    <img src="img/one97.png" alt="">
+                </li>
+                <li>
+                    <img src="img/two.png" alt="">
+                </li>
+                <li>
+                    <img src="img/three.png" alt="">
+                </li>
+                <li><img src="img/four.png" alt=""></li>
+                <li><img src="img/five.png" alt=""></li>
+                <li><img src="img/six.png" alt=""></li>
+                <li><img src="img/Eight.png" alt=""></li>
+                <li><img src="img/Nine.png" alt=""></li>
+                <li><img src="img/Ten.png" alt=""></li>
+                <li><img src="img/one97.png" alt=""></li>
+                <li><img src="img/two.png" alt=""></li>
+                <li><img src="img/three.png" alt=""></li>
+                <li><img src="img/four.png" alt=""></li>
+                <li><img src="img/five.png" alt=""></li>
+                <li><img src="img/six.png" alt=""></li>
+                <li><img src="img/Eight.png" alt=""></li>
+            </ul>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="glyphicon glyphicon-triangle-right" href="#myCarousel"
+           data-slide="prev"></a>
+        <a class="glyphicon glyphicon-triangle-left" href="#myCarousel"
+           data-slide="next"></a>
     </div>
 </div>
 
 <!-- 底部 -->
-<footer class="hidden-sm hidden-xs">
-
-    <div class="footer_q">
-        <div class="footer">
-            <div class="Logo_bot">
-                <img src="img/ceoL.png" alt="">
-            </div>
-            <div class="list">
-                <div class=" hidden-sm hidden-xs">
-                    <ul>
-                        <li><h3>关于平台</h3></li>
-                        <li>公司简介</li>
-                        <li>联络方式</li>
-                        <li>用户注册</li>
-
-                    </ul>
-                </div>
-                <div class=" hidden-xs hidden-sm">
-                    <ul>
-                        <li><h3>下载/支持</h3></li>
-                        <li>钱包下载</li>
-                        <li>新品上线</li>
-                        <li>费用说明</li>
-                    </ul>
-                </div>
-                <div class=" hidden-xs hidden-sm">
-
-                    <ul>
-                        <li><h3>客户服务</h3></li>
-                        <li>新人帮助</li>
-                        <li>充值帮助</li>
-                        <li>推荐奖励</li>
-                    </ul>
-                </div>
-                <div class="hidden-xs hidden-sm hidden-md four pull-left">
-                    <ul>
-                        <li><h3>联系我们</h3></li>
-                        <li class="li_1">美国:sunny@zd.com</li>
-                        <li class="li_2">韩国:maple@zd.com</li>
-                        <li class="li_3">迪拜:nassar.achkar@zd.com</li>
-                        <li class="li_4">瑞士:jimmy@zd.com</li>
-                        <li class="li_5">加拿大:sunny.sun@zd.com</li>
-                        <li class="li_6">其他地区:support@zd.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="bottom_x"></div>
-
-
-        <div class="footer_bottom">
-
-            <ul>
-                <li><img src="img/icon-4.png" alt=""></li>
-                <li><img src="img/icon-6.png" alt=""></li>
-                <li><img src="img/icon-5.png" alt=""></li>
-                <li><img src="img/icon-3.png" alt=""></li>
-                <li><img src="img/icon-2.png" alt=""></li>
-                <li><img src="img/icon-1.png" alt=""></li>
-            </ul>
-            <span>為了您能更好的瀏覽和體驗本站內容，瀏覽建議使用Google Chrome，分辨率建議使用1366X768以上<br/>
-保護會員隱私 保障用戶安全，CEO交易所已啟用https加密，SSL證書加密傳輸HTTPS確保數據在傳送中不被劫持改變!<br/>
-CopyRight 2017-2018 CEO交易所 WWW.BITE.CEO ALL Rights Reserved
-</span>
-        </div>
-
-
-    </div>
+<footer id="footer" class="hidden-sm hidden-xs">
 </footer>
 <script src="assets/jquery/jquery.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -641,6 +625,7 @@ CopyRight 2017-2018 CEO交易所 WWW.BITE.CEO ALL Rights Reserved
         swipDistance: 100
     })
 </script>
+<script src="js/ajax.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
