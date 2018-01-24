@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/foot_01.css">
+    <link rel="stylesheet" href="css/jy_table_m.css">
 </head>
 <body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 50 * (clientWidth / 375) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
 <header>
     <div class="top">
         <ul class="top_left  hidden-xs hidden-sm">
@@ -298,20 +313,6 @@
     </div>
 </div>
 <!-- 移动端图表 -->
-<script>
-    (function (doc, win) {
-        var docEl = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-                var clientWidth = docEl.clientWidth;
-                if (!clientWidth) return;
-                docEl.style.fontSize = 50 * (clientWidth / 375) + 'px';
-            };
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-</script>
 <div id="jy_table_m" class="hidden-lg hidden-md">
     <ul class="t_title">
         <li>
@@ -327,6 +328,31 @@
             <h3>对HKD交易</h3>
         </li>
     </ul>
+    <div class="t_con">
+        <div>
+            <ul>
+                <li>
+                    <img src="img/btc_m.png" alt="BTC">
+                </li>
+                <li>
+                    <p>
+                        <b class="font">BTC</b>
+                        <b class="font_red">CYN79100.00</b>
+                    </p>
+                    <p>
+                        <span>量:1075.32</span>
+                        <span>&yen;79100.00</span>
+                    </p>
+                </li>
+                <li>
+                    <button class="change_btn">+0.41%</button>
+                </li>
+                <li>
+                    <button class="trade_btn">去交易</button>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <!-- 下载 -->
