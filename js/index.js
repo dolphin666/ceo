@@ -29,4 +29,3 @@ $(document).ready(function(){
 //             document.getElementById("footer").innerHTML=html;
 //         })
 // })();
-$("#footer").load("foot_01.html");
