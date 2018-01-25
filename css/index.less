@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 100px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
   overflow-x: hidden;
 }
 
@@ -70,12 +71,9 @@ a:hover {
 
 /*移动端头部end*/
 .Logo {
-  position: absolute;
-  top: 0.33rem;
-  left: 0;
   cursor: pointer;
-  width: 0.68rem;
-  height: 0.68rem;
+  width: 68px;
+  height: 68px;
 }
 
 .m_menu_list {
@@ -127,25 +125,29 @@ a:hover {
 .nva_q {
   position: absolute;
   z-index: 100;
-  top: 28px;
-  left: 52%;
+  left: 50%;
+  padding-top: 11px;
   transform: translateX(-50%);
 }
 
 .nva_q .Logo {
   width: 60px;
   height: 60px;
+  margin-top:-27px;
 }
 
 .nva_q ul.nav_font {
   width: 100%;
   box-sizing: border-box;
-  padding-left: 40px;
   margin-top: 25px;
+}
+.nva_q ul.nav_font li:first-child{
+  padding-left: 0;
+  padding-right: .2rem;
 }
 
 ul.nav.navbar-nav li {
-  padding-left: 9px;
+  padding-left: .18rem;
 }
 
 /***********轮播图**********/
@@ -207,7 +209,7 @@ ul.nav.navbar-nav li {
     margin: 0 auto;
     padding: 0;
     width: 50px;
-    height: 23px;
+    height: 22px;
     background: #1d1e26;
     margin-top: -23px;
     b {
@@ -223,7 +225,12 @@ ul.nav.navbar-nav li {
     }
   }
 }
-
+.swipe_menu a{
+  text-decoration: none;
+}
+.swipe_menu a:focus,.swipe_menu a:hover{
+  color:#fff;
+}
 .swipe_nav_q .row .one:hover {
   cursor: pointer;
   background-color: #1d1e26;
@@ -240,7 +247,6 @@ ul.nav.navbar-nav li {
 
 .swipe_nav_q .active {
   cursor: pointer;
-  background-color: #1d1e26;
 }
 
 .swipe_d {
@@ -343,6 +349,7 @@ ul.nav.navbar-nav li {
   padding-top: 35px;
   margin-left: 8%;
   height: 700px;
+  position: relative;
 }
 
 .download_c .download_r {
@@ -368,7 +375,9 @@ ul.nav.navbar-nav li {
 .download_r .app:hover {
   cursor: pointer;
 }
-
+.download_r span img:hover{
+  opacity: .8;
+}
 .download_r .describe {
   display: block;
   color: #fff;
@@ -554,8 +563,13 @@ ul.nav.navbar-nav li {
 
 .Information .Content .Information_left .Information_left_bottom ul .Announcement {
   font-size: 18px;
-  font-family: "微软雅黑";
   margin-top: 25px;
+}
+.Information .Content .Information_left .Information_left_bottom ul .Announcement:hover{
+  color:#95000b;
+}
+.Information .Content .Information_right_left .Information_left_bottom ul .Announcement:hover{
+  color: #00a867;
 }
 
 .Information .Content .Information_left .Information_left_bottom ul .Announcement span {
@@ -850,6 +864,12 @@ ul.nav.navbar-nav li {
       float: left;
       padding: 10px;
     }
+    img{
+      opacity:.6;
+    }
+    img:hover{
+      opacity:1;
+    }
   }
   #myCarousel {
     height: 180px;
@@ -909,6 +929,8 @@ ul.nav.navbar-nav li {
     list-style-type: none;
     li {
       float: left;
+      height:45px;
+      margin-top: -1px;
     }
   }
   .jyt_con {
@@ -974,6 +996,7 @@ ul.nav.navbar-nav li {
     }
 
     .jyt_detail {
+      border-bottom: 1px solid #F8F8F8;
       ul {
         li {
           padding-left: 5px
@@ -1002,6 +1025,9 @@ ul.nav.navbar-nav li {
         margin-left: 10px;
         background: url("../img/gp_up.png") no-repeat;
       }
+    }
+    .jyt_detail:hover{
+      background-color: #f9f9f9;
     }
     .glyphicon-arrow-down {
       color: #3FC18F;

@@ -20,6 +20,10 @@ $(document).ready(function(){
     $(".swipe_menu div").mouseleave(function(){
         $(this).children("p").css("display","none");
     });
+    // $(".swipe_menu div").click(function(){
+    //     $(this).parentNode.children.children("p").css("display","none");
+    //     $(this).children("p").css("display","block");
+    // });
 });
 
 //加载footer
@@ -29,3 +33,13 @@ $(document).ready(function(){
 //             document.getElementById("footer").innerHTML=html;
 //         })
 // })();
+
+/***** 手机动效 ****/
+$(document).ready(function () {
+    $(".phone").mouseenter(function () {
+        $(this).addClass("animated rubberBand");
+    });
+    $(".phone").mouseout(function () {
+        $(this).removeClass("animated rubberBand");
+    });
+});

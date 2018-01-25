@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/foot_01.css">
     <link rel="stylesheet" href="css/jy_table_m.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 <script>
@@ -88,9 +89,11 @@
     <div class="container nva_q hidden-sm hidden-xs">
         <nav class="navbar navbar-custom">
             <div>
-                <img src="img/Logo.png" alt="" class="Logo">
                 <ul class="nav  navbar-nav  nav_font">
                     <li>
+                        <img src="img/Logo.png" alt="" class="Logo">
+                    </li>
+                    <li class="active">
                         <a href="#">网站首页<br>
                             <span class="bot">Home</span></a>
                     </li>
@@ -119,7 +122,7 @@
                             <span>safety</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#">会员注册<br>
                             <span>Register</span>
                         </a>
@@ -234,84 +237,234 @@
         </a>
     </div>
 
-    <!--<div class="swipe_logo">
-        <img src="img/swipe_logo.png" alt="">
-        <h3>CEO交易所,承载用户的信赖与支持</h3>
-        <span>中英韩日四语专业客服,我们始终坚持用户满意才是真正的成功!</span>
-        <br>
-        <img src="img/gywm.png" alt="关于我们">
-    </div>-->
 
 
 </div>
 
 <!--交易表格PC-->
 <div class="swipe_nav_q hidden-sm hidden-xs">
-    <div class="row swipe_menu">
+    <div class="row swipe_menu nav nav-tabs" role="tablist">
         <div class="col-md-2 hidden-xs hidden-sm"></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 one active"><span>对CNY交易区</span>
+        <div  role="presentation" class="active col-md-2 col-sm-3 col-xs-3 one"><a href="#one"  role="tab" data-toggle="tab" aria-controls="one" >对CNY交易区</a>
             <p><b></b></p></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 two"><span>对USDT交易区</span>
+        <div   role="presentation" class="col-md-2 col-sm-3 col-xs-3 two"><a href="#two"  role="tab" data-toggle="tab" aria-controls="two" >对USDT交易区</a>
             <p><b></b></p></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 three"><span>对BTC交易区</span>
+        <div   role="presentation" class="col-md-2 col-sm-3 col-xs-3 three"><a href="#three"  role="tab" data-toggle="tab" aria-controls="three" >对BTC交易区</a>
             <p><b></b></p></div>
-        <div class="col-md-2 col-sm-3 col-xs-3 four"><span>对KKD交易区</span>
+        <div  role="presentation" class="col-md-2 col-sm-3 col-xs-3 four"><a href="#four"  role="tab" data-toggle="tab" aria-controls="four" >对KKD交易区</a>
             <p><b></b></p></div>
         <div class="col-md-2 hidden-xs hidden-sm"></div>
 
     </div>
-    <div id="jy_table_pc" class="hidden-sm hidden-xs">
-        <ul class="jyt_con">
-            <li class="jyt_menu">
-                <ul>
-                    <li>币种对CNY</li>
-                    <li>价格(CNY)</li>
-                    <li>最高价(CNY)</li>
-                    <li>最低价(CNY)</li>
-                    <li>交易量</li>
-                    <li>日涨跌</li>
-                    <li><span class="qqsc"><i></i><b>全球市场</b></span></li>
-                </ul>
-            </li>
-            <li class="jyt_detail">
-                <ul>
-                    <li class="coin">
-                        <i class="coin-btc"></i>
-                        <b>BTC</b> /
-                        CNY
-                    </li>
-                    <li>
-                        <b class="green_bold">74102.00</b>
-                        <i class="glyphicon glyphicon-arrow-down"></i>
-                    </li>
-                    <li>101200.00</li>
-                    <li>95000.00</li>
-                    <li>180.6013 BTC</li>
-                    <li class="font_green">-2.41 %</li>
-                    <li class="font_red">专业交易 <span class="gp_up"></span></li>
-                </ul>
-            </li>
-            <li class="jyt_detail">
-                <ul>
-                    <li class="coin">
-                        <i class="coin-btc"></i>
-                        <b>BTC</b> /
-                        CNY
-                    </li>
-                    <li>
-                        <b class="red_bold">74102.00</b>
-                        <i class="glyphicon glyphicon-arrow-up"></i>
-                    </li>
-                    <li>101200.00</li>
-                    <li>95000.00</li>
-                    <li>180.6013 BTC</li>
-                    <li class="font_red">-2.41 %</li>
-                    <li class="font_red">专业交易 <span class="gp_up"></span></li>
-                </ul>
-            </li>
-        </ul>
+    <div id="jy_table_pc" class="tab-content hidden-sm hidden-xs">
+        <div  role="tabpanel" class="tab-pane jyt_con active" id="one">
+            <ul>
+                <li class="jyt_menu">
+                    <ul>
+                        <li>1币种对CNY</li>
+                        <li>价格(CNY)</li>
+                        <li>最高价(CNY)</li>
+                        <li>最低价(CNY)</li>
+                        <li>交易量</li>
+                        <li>日涨跌</li>
+                        <li><span class="qqsc"><i></i><b>全球市场</b></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="green_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-down"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_green">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="red_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-up"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_red">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div  role="tabpanel" class="tab-pane jyt_con " id="two">
+            <ul>
+                <li class="jyt_menu">
+                    <ul>
+                        <li>2币种对CNY</li>
+                        <li>价格(CNY)</li>
+                        <li>最高价(CNY)</li>
+                        <li>最低价(CNY)</li>
+                        <li>交易量</li>
+                        <li>日涨跌</li>
+                        <li><span class="qqsc"><i></i><b>全球市场</b></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="green_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-down"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_green">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="red_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-up"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_red">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div  role="tabpanel" class="tab-pane jyt_con " id="three">
+            <ul>
+                <li class="jyt_menu">
+                    <ul>
+                        <li>3币种对CNY</li>
+                        <li>价格(CNY)</li>
+                        <li>最高价(CNY)</li>
+                        <li>最低价(CNY)</li>
+                        <li>交易量</li>
+                        <li>日涨跌</li>
+                        <li><span class="qqsc"><i></i><b>全球市场</b></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="green_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-down"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_green">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="red_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-up"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_red">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div  role="tabpanel" class="tab-pane jyt_con " id="four">
+            <ul>
+                <li class="jyt_menu">
+                    <ul>
+                        <li>4币种对CNY</li>
+                        <li>价格(CNY)</li>
+                        <li>最高价(CNY)</li>
+                        <li>最低价(CNY)</li>
+                        <li>交易量</li>
+                        <li>日涨跌</li>
+                        <li><span class="qqsc"><i></i><b>全球市场</b></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="green_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-down"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_green">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+                <li class="jyt_detail">
+                    <ul>
+                        <li class="coin">
+                            <i class="coin-btc"></i>
+                            <b>BTC</b> /
+                            CNY
+                        </li>
+                        <li>
+                            <b class="red_bold">74102.00</b>
+                            <i class="glyphicon glyphicon-arrow-up"></i>
+                        </li>
+                        <li>101200.00</li>
+                        <li>95000.00</li>
+                        <li>180.6013 BTC</li>
+                        <li class="font_red">-2.41 %</li>
+                        <li class="font_red">专业交易 <span class="gp_up"></span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </div>
+
 <!-- 移动端图表 -->
 <div id="jy_table_m" class="hidden-lg hidden-md">
     <ul class="t_title">
@@ -359,7 +512,6 @@
 <div class="download hidden-sm hidden-xs">
     <div class="download_c">
         <img class="phone img-responsive" src="img/iPhone-6-_-4_02.png" alt="" class="img-responsive">
-
         <div class="download_r">
             <div class="app">
                 查看app详情介绍
