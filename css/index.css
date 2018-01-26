@@ -1024,6 +1024,7 @@ h4 {
   box-sizing: border-box;
 }
 #jy_table_m .t_title {
+  display: block;
   width: 100%;
   height: .95rem;
   padding-top: .3rem;
@@ -1044,4 +1045,105 @@ h4 {
 }
 #jy_table_m .t_title li:hover {
   border-bottom: 2px solid #9E323D;
+}
+.t_con {
+  display: block;
+  width: 100%;
+  font-size: .27rem;
+}
+.t_con > div {
+  width: 100%;
+}
+.t_con > div ul.t_con_h {
+  width: 100%;
+  height: 1.28rem;
+  border-bottom: 1px solid #D6D6D8;
+  padding: .36rem .15rem;
+}
+.t_con > div ul li {
+  list-style: none;
+  float: left;
+}
+.t_con > div.t_con_down ul li button {
+  width: 1.35rem;
+  height: .57rem;
+  color: #fff;
+  border-radius: .1rem;
+  background: #9e323d;
+  border: none;
+}
+.t_con > div.t_con_down ul li:last-child {
+  float: right;
+}
+.t_con > div.t_con_down ul li:last-child button {
+  background-color: #e5e5e5;
+  color: #282A32;
+  margin-left: .17rem;
+}
+.t_con img {
+  width: .57rem;
+  height: .57rem;
+}
+.t_con > div ul.t_con_h li:nth-child(2) {
+  width: 3.4rem;
+  padding-left: .16rem;
+}
+.t_con > div ul.t_con_h p {
+  padding-bottom: .08rem;
+  margin-top: -0.12rem;
+}
+.t_con > div ul.t_con_h li:nth-child(2) p:first-child b:first-child {
+  float: left;
+}
+.t_con > div ul.t_con_h li:nth-child(2) p:first-child b:last-child {
+  float: right;
+}
+.t_con > div ul.t_con_h li:nth-child(2) p:last-child span:first-child {
+  float: left;
+}
+.t_con > div ul.t_con_h li:nth-child(2) p:last-child span:last-child {
+  float: right;
+}
+.t_con > div ul.t_con_h li:nth-child(3) {
+  width: 1.58rem;
+  padding-left: .25rem;
+}
+.t_con_b {
+  display: none;
+  width: 100%;
+}
+.t_con_b .t_data {
+  width: 100%;
+  text-align: center;
+  height: 1.01rem;
+}
+.t_con_b .t_data h5 {
+  font-size: .24rem;
+  line-height: .4rem;
+  margin: 0;
+  padding: 0;
+}
+.t_data {
+  padding-bottom: .12rem;
+  height: 1rem;
+}
+.t_data li {
+  float: left;
+  width: 33.33333%;
+}
+.t_data li div {
+  width: 100%;
+  height: .8rem;
+  margin-top: .1rem;
+  margin-bottom: .1rem;
+  border-right: 1px solid #E6E6E7;
+}
+.t_data li:last-child div {
+  border: none;
+}
+.chart {
+  width: 99.5%;
+  height: 2.6rem;
+  border: 2px solid #DBDBDB;
+  margin: 0 auto;
 }
