@@ -220,7 +220,7 @@ ul.nav.navbar-nav li {
       border-right: 10px solid transparent;
       border-bottom: 10px solid #FFF;
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       left: 45%;
     }
   }
@@ -239,6 +239,7 @@ ul.nav.navbar-nav li {
 .swipe_nav_q .row .one:hover, .swipe_nav_q .row .two:hover, .swipe_nav_q .row .three:hover, .swipe_nav_q .row .four:hover {
   cursor: pointer;
   background-color: #1d1e26;
+  height: 64px;
 }
 
 .swipe_nav_q .row .one:hover .one p {
@@ -427,9 +428,17 @@ ul.nav.navbar-nav li {
   height: 730px;
   background: url('../img/Transaction-bg.png') no-repeat;
   position: relative;
+  h3,p{
+    width:950px;
+    text-align: center;
+  }
+
 }
 
 .Transaction .fuwu {
+  width:950px;
+  height:70%;
+  background: #333;
   position: absolute;
   top: 65%;
   left: 50%;
@@ -455,7 +464,7 @@ ul.nav.navbar-nav li {
   color: #555555;
 }
 
-.Transaction span {
+.Transaction p {
   position: absolute;
   top: 180px;
   left: 50%;
@@ -1150,6 +1159,9 @@ ul.nav.navbar-nav li {
   height: .95rem;
   padding-top: .3rem;
   background: #262831;
+  li{
+    a{text-decoration: none;}
+  }
 }
 
 #jy_table_m .t_title li {
@@ -1209,7 +1221,7 @@ ul.nav.navbar-nav li {
 .t_con > div.t_con_down ul li:last-child button {
   background-color: #e5e5e5;
   color: #282A32;
-  margin-left: .17rem;
+  //margin-left: .17rem;
 }
 
 .t_con img {

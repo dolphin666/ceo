@@ -31,50 +31,24 @@
             <li>
                 <img src="img/中国国旗.png" alt="">
             </li>
-            <li>
-                <!--<div class="dropdown">
-                    <a id="angl_sel" type="button" class="btn btn-default" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        CN <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu"  aria-labelledby="angl_sel">
-                        <li><a href="#">简体中文</a></li>
-                        <li><a href="#">En</a></li>
-                        <li><a href="#">韩语</a></li>
-                        &lt;!&ndash;<li role="separator" class="divider"></li>&ndash;&gt;
-                        &lt;!&ndash; <li><a href="#">Separated link</a></li> &ndash;&gt;
-                    </ul>
-                </div>-->
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle"
-                            data-toggle="dropdown">
-                        默认 <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">功能</a></li>
-                        <li><a href="#">另一个功能</a></li>
-                        <li><a href="#">其他</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">分离的链接</a></li>
-                    </ul>
-                </div>
-
-            </li>
-            <li>|</li>
-            <li>
+            <li><!--TODO 1-->
                 <div class="btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                        简体中文 <span class="caret"></span>
+                        CN <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
                         <li><a href="#">简体中文</a></li>
-                        <li><a href="#">English</a></li>
+                        <li><a href="#">En</a></li>
                         <li><a href="#">韩语</a></li>
                         <li role="separator" class="divider"></li>
                         <!-- <li><a href="#">Separated link</a></li> -->
                     </ul>
                 </div>
+            </li>
+            <li>|</li>
+            <li>
+                <span>简体中文</span>
             </li>
             <li>|</li>
             <li class="font_g">
@@ -250,26 +224,29 @@
     </div>
 
 
-
 </div>
 
 <!--交易表格PC-->
 <div class="swipe_nav_q hidden-sm hidden-xs">
     <div class="row swipe_menu nav nav-tabs" role="tablist">
         <div class="col-md-2 hidden-xs hidden-sm"></div>
-        <div  role="presentation" class="active col-md-2 col-sm-3 col-xs-3 one"><a href="#one"  role="tab" data-toggle="tab" aria-controls="one" >对CNY交易区</a>
+        <div role="presentation" class="active col-md-2 col-sm-3 col-xs-3 one"><a href="#one" role="tab"
+                                                                                  data-toggle="tab" aria-controls="one">对CNY交易区</a>
             <p><b></b></p></div>
-        <div   role="presentation" class="col-md-2 col-sm-3 col-xs-3 two"><a href="#two"  role="tab" data-toggle="tab" aria-controls="two" >对USDT交易区</a>
+        <div role="presentation" class="col-md-2 col-sm-3 col-xs-3 two"><a href="#two" role="tab" data-toggle="tab"
+                                                                           aria-controls="two">对USDT交易区</a>
             <p><b></b></p></div>
-        <div   role="presentation" class="col-md-2 col-sm-3 col-xs-3 three"><a href="#three"  role="tab" data-toggle="tab" aria-controls="three" >对BTC交易区</a>
+        <div role="presentation" class="col-md-2 col-sm-3 col-xs-3 three"><a href="#three" role="tab" data-toggle="tab"
+                                                                             aria-controls="three">对BTC交易区</a>
             <p><b></b></p></div>
-        <div  role="presentation" class="col-md-2 col-sm-3 col-xs-3 four"><a href="#four"  role="tab" data-toggle="tab" aria-controls="four" >对HKD交易区</a>
+        <div role="presentation" class="col-md-2 col-sm-3 col-xs-3 four"><a href="#four" role="tab" data-toggle="tab"
+                                                                            aria-controls="four">对HKD交易区</a>
             <p><b></b></p></div>
         <div class="col-md-2 hidden-xs hidden-sm"></div>
 
     </div>
     <div id="jy_table_pc" class="tab-content hidden-sm hidden-xs">
-        <div  role="tabpanel" class="tab-pane jyt_con active" id="one">
+        <div role="tabpanel" class="tab-pane jyt_con active" id="one">
             <ul>
                 <li class="jyt_menu">
                     <ul>
@@ -374,7 +351,7 @@
                 </li>
             </ul>
         </div>
-        <div  role="tabpanel" class="tab-pane jyt_con " id="two">
+        <div role="tabpanel" class="tab-pane jyt_con " id="two">
             <ul>
                 <li class="jyt_menu">
                     <ul>
@@ -443,7 +420,7 @@
                 </li>
             </ul>
         </div>
-        <div  role="tabpanel" class="tab-pane jyt_con " id="three">
+        <div role="tabpanel" class="tab-pane jyt_con " id="three">
             <ul>
                 <li class="jyt_menu">
                     <ul>
@@ -494,7 +471,7 @@
                 </li>
             </ul>
         </div>
-        <div  role="tabpanel" class="tab-pane jyt_con " id="four">
+        <div role="tabpanel" class="tab-pane jyt_con " id="four">
             <ul>
                 <li class="jyt_menu">
                     <ul>
@@ -583,35 +560,176 @@
                 </li>
             </ul>
         </div>
-
     </div>
 </div>
 
 <!-- 移动端图表 -->
 <div id="jy_table_m" class="hidden-lg hidden-md">
-    <ul class="t_title">
-        <li>
-            <h3>对CYN交易</h3>
+    <ul class="t_title" role="tablist">
+        <li  role="presentation" class="active">
+            <a href="#one_m" role="tab"
+                                                                                  data-toggle="tab" aria-controls="one_m" href="#one_m"><h3>对CYN交易</h3></a>
         </li>
-        <li>
-            <h3>对BTC交易</h3>
+        <li  role="presentation">
+            <a href="#two_m" role="tab"
+                                                                                  data-toggle="tab" aria-controls="two_m" href="#two_m"><h3>对BTC交易</h3></a>
         </li>
-        <li>
-            <h3>对CEO交易</h3>
+        <li  role="presentation">
+            <a href="#three_m" role="tab"
+                                                                                  data-toggle="tab" aria-controls="three_m" href="#three_m"><h3>对CEO交易</h3></a>
         </li>
-        <li>
-            <h3>对HKD交易</h3>
+        <li  role="presentation">
+            <a href="#four_m" role="tab"
+                                                                                  data-toggle="tab" aria-controls="four_m" href="#four_m"><h3>对HKD交易</h3></a>
         </li>
     </ul>
-    <div class="t_con">
-        <div class="t_con_down">
+    <div class="t_con tab-content ">
+        <div role="tabpanel" class="active tab-pane t_con_down"id="one_m">
             <ul class="t_con_h">
                 <li>
                     <img src="img/btc_m.png" alt="BTC">
                 </li>
                 <li>
                     <p>
-                        <b class="font">BTC</b>
+                        <b class="font">1BTC</b>
+                        <b class="font_red">CYN79100.00</b>
+                    </p>
+                    <p>
+                        <span>量:1075.32</span>
+                        <span>&yen;79100.00</span>
+                    </p>
+                </li>
+                <li>
+                    <button class="change_btn">+0.41%</button>
+                </li>
+                <li>
+                    <button class="trade_btn">去交易</button>
+                </li>
+            </ul>
+            <div class="t_con_b">
+                <ul class="t_data">
+                    <li>
+                        <div>
+                            <h5>最高</h5>
+                            <b>CYN13500.00</b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>最低</h5>
+                            <b>CYN9600.00</b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>成交量</h5>
+                            <b>CYN9600.00</b>
+                        </div>
+                    </li>
+                </ul>
+                <div class="chart"></div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane t_con_down"id="two_m">
+            <ul class="t_con_h">
+                <li>
+                    <img src="img/btc_m.png" alt="BTC">
+                </li>
+                <li>
+                    <p>
+                        <b class="font">2BTC</b>
+                        <b class="font_red">CYN79100.00</b>
+                    </p>
+                    <p>
+                        <span>量:1075.32</span>
+                        <span>&yen;79100.00</span>
+                    </p>
+                </li>
+                <li>
+                    <button class="change_btn">+0.41%</button>
+                </li>
+                <li>
+                    <button class="trade_btn">去交易</button>
+                </li>
+            </ul>
+            <div class="t_con_b">
+                <ul class="t_data">
+                    <li>
+                        <div>
+                            <h5>最高</h5>
+                            <b>CYN13500.00</b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>最低</h5>
+                            <b>CYN9600.00</b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>成交量</h5>
+                            <b>CYN9600.00</b>
+                        </div>
+                    </li>
+                </ul>
+                <div class="chart"></div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane t_con_down"id="three_m">
+            <ul class="t_con_h">
+                <li>
+                    <img src="img/btc_m.png" alt="BTC">
+                </li>
+                <li>
+                    <p>
+                        <b class="font">3BTC</b>
+                        <b class="font_red">CYN79100.00</b>
+                    </p>
+                    <p>
+                        <span>量:1075.32</span>
+                        <span>&yen;79100.00</span>
+                    </p>
+                </li>
+                <li>
+                    <button class="change_btn">+0.41%</button>
+                </li>
+                <li>
+                    <button class="trade_btn">去交易</button>
+                </li>
+            </ul>
+            <div class="t_con_b">
+                <ul class="t_data">
+                    <li>
+                        <div>
+                            <h5>最高</h5>
+                            <b>CYN13500.00</b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>最低</h5>
+                            <b>CYN9600.00</b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>成交量</h5>
+                            <b>CYN9600.00</b>
+                        </div>
+                    </li>
+                </ul>
+                <div class="chart"></div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane t_con_down"id="four_m">
+            <ul class="t_con_h">
+                <li>
+                    <img src="img/btc_m.png" alt="BTC">
+                </li>
+                <li>
+                    <p>
+                        <b class="font">4BTC</b>
                         <b class="font_red">CYN79100.00</b>
                     </p>
                     <p>
@@ -675,11 +793,17 @@
 <!-- 交易平台 -->
 <div class="Transaction hidden-sm hidden-xs">
     <h3>CEO交易平台-金融级别安全交易平台</h3>
-    <span>4年以上的金融产品运营风控经验、技术安全防护、数字资产90%存储多重签名冷钱包</span>
+    <p>4年以上的金融产品运营风控经验、技术安全防护、数字资产90%存储多重签名冷钱包</p>
     <!-- <div class="Service"> -->
     <div>
-        <img src="img/Service.png" alt="" class="fuwu">
-        <img src="img/swipe_logo_01.png" alt="" class="swipe_logo_02">
+        <div class="fuwu"><!-- TODO:2 -->
+            <div class="fuwu-1 fuwu-con"><img src="img/" alt=""></div>
+            <div class="fuwu-2 fuwu-con"><img src="img/" alt=""></div>
+            <div class="fuwu-3 fuwu-con"><img src="img/" alt=""></div>
+            <div class="fuwu-4 fuwu-con"><img src="img/" alt=""></div>
+            <div class="fuwu-5"></div>
+        </div>
+        <!--<img src="img/swipe_logo_01.png" alt="" class="swipe_logo_02">-->
     </div>
     <!-- </div> -->
 </div>

@@ -201,7 +201,7 @@ ul.nav.navbar-nav li {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #FFF;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 45%;
 }
 .swipe_menu a {
@@ -221,6 +221,7 @@ ul.nav.navbar-nav li {
 .swipe_nav_q .row .four:hover {
   cursor: pointer;
   background-color: #1d1e26;
+  height: 64px;
 }
 .swipe_nav_q .row .one:hover .one p {
   display: block;
@@ -382,7 +383,15 @@ ul.nav.navbar-nav li {
   background: url('../img/Transaction-bg.png') no-repeat;
   position: relative;
 }
+.Transaction h3,
+.Transaction p {
+  width: 950px;
+  text-align: center;
+}
 .Transaction .fuwu {
+  width: 950px;
+  height: 70%;
+  background: #333;
   position: absolute;
   top: 65%;
   left: 50%;
@@ -405,7 +414,7 @@ ul.nav.navbar-nav li {
   font-family: "微软雅黑";
   color: #555555;
 }
-.Transaction span {
+.Transaction p {
   position: absolute;
   top: 180px;
   left: 50%;
@@ -1030,6 +1039,9 @@ h4 {
   padding-top: .3rem;
   background: #262831;
 }
+#jy_table_m .t_title li a {
+  text-decoration: none;
+}
 #jy_table_m .t_title li {
   float: left;
   width: 25%;
@@ -1078,7 +1090,6 @@ h4 {
 .t_con > div.t_con_down ul li:last-child button {
   background-color: #e5e5e5;
   color: #282A32;
-  margin-left: .17rem;
 }
 .t_con img {
   width: .57rem;
