@@ -41,7 +41,7 @@ a:hover {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 28px;/*.32rem*/
+    font-size: 28px; /*.32rem*/
     font-weight: bold;
   }
   .m_menu_btn {
@@ -133,7 +133,7 @@ a:hover {
 .nva_q .Logo {
   width: 60px;
   height: 60px;
-  margin-top:-27px;
+  margin-top: -27px;
 }
 
 .nva_q ul.nav_font {
@@ -141,7 +141,8 @@ a:hover {
   box-sizing: border-box;
   margin-top: 25px;
 }
-.nva_q ul.nav_font li:first-child{
+
+.nva_q ul.nav_font li:first-child {
   padding-left: 0;
   padding-right: .2rem;
 }
@@ -225,12 +226,15 @@ ul.nav.navbar-nav li {
     }
   }
 }
-.swipe_menu a{
+
+.swipe_menu a {
   text-decoration: none;
 }
-.swipe_menu a:focus,.swipe_menu a:hover{
-  color:#fff;
+
+.swipe_menu a:focus, .swipe_menu a:hover {
+  color: #fff;
 }
+
 .swipe_nav_q .row .one:hover {
   cursor: pointer;
   background-color: #1d1e26;
@@ -376,9 +380,11 @@ ul.nav.navbar-nav li {
 .download_r .app:hover {
   cursor: pointer;
 }
-.download_r span img:hover{
+
+.download_r span img:hover {
   opacity: .8;
 }
+
 .download_r .describe {
   display: block;
   color: #fff;
@@ -428,21 +434,83 @@ ul.nav.navbar-nav li {
   height: 730px;
   background: url('../img/Transaction-bg.png') no-repeat;
   position: relative;
-  h3,p{
-    width:950px;
+  h3, p {
+    width: 950px;
     text-align: center;
   }
 
 }
 
 .Transaction .fuwu {
-  width:950px;
-  height:70%;
-  background: #333;
+  width: 950px;
+  height: 70%;
   position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
+  div {
+    position: absolute;
+    width: 142px;
+    height: 105px;
+  }
+  div:nth-child(1) {
+    top: 53px;
+    left: 255px;
+    background: url("../img/flag_1.png") no-repeat top center;
+  }
+  div:nth-child(2) {
+    top: 53px;
+    right: 255px;
+    background: url("../img/flag_2.png") no-repeat top center;
+  }
+  div:nth-child(3) {
+    top: 250px;
+    left: 0;
+    background: url("../img/flag_4.png") no-repeat top center;
+  }
+  div:nth-child(4) {
+    top: 250px;
+    right: 0;
+    background: url("../img/flag_3.png") no-repeat top center;
+  }
+
+  div:nth-child(5) {
+    bottom: 0;
+    right: 255px;
+    width: 425px;
+    height: 213px;
+    background: url("../img/flag_tuoyuan.png") no-repeat;
+    img {
+      position: relative;
+      top: 30px;
+      left: 82px;
+    }
+  }
+  p {
+    position: absolute;
+    //transform: translateX(22%);
+    width: 137px;
+    height: 50px;
+  }
+  p:nth-child(6) {
+    top: 177px;
+    left: 326px;
+  }
+  p:nth-child(7) {
+    top: 177px;
+    right: 245px;
+    transform: translateX(57%);
+  }
+  p:nth-child(8) {
+    top: 375px;
+    left: 72px;
+  }
+  p:nth-child(9) {
+    top: 375px;
+    right: 57px;
+    transform: translateX(242%);
+  }
+
 }
 
 .Transaction .swipe_logo_02 {
@@ -574,10 +642,12 @@ ul.nav.navbar-nav li {
   font-size: 18px;
   margin-top: 25px;
 }
-.Information .Content .Information_left .Information_left_bottom ul .Announcement:hover{
-  color:#95000b;
+
+.Information .Content .Information_left .Information_left_bottom ul .Announcement:hover {
+  color: #95000b;
 }
-.Information .Content .Information_right_left .Information_left_bottom ul .Announcement:hover{
+
+.Information .Content .Information_right_left .Information_left_bottom ul .Announcement:hover {
   color: #00a867;
 }
 
@@ -873,11 +943,11 @@ ul.nav.navbar-nav li {
       float: left;
       padding: 10px;
     }
-    img{
-      opacity:.6;
+    img {
+      opacity: .6;
     }
-    img:hover{
-      opacity:1;
+    img:hover {
+      opacity: 1;
     }
   }
   #myCarousel {
@@ -938,7 +1008,7 @@ ul.nav.navbar-nav li {
     list-style-type: none;
     li {
       float: left;
-      height:45px;
+      height: 45px;
       margin-top: -1px;
     }
   }
@@ -1035,7 +1105,7 @@ ul.nav.navbar-nav li {
         background: url("../img/gp_up.png") no-repeat;
       }
     }
-    .jyt_detail:hover{
+    .jyt_detail:hover {
       background-color: #f9f9f9;
     }
     .glyphicon-arrow-down {
@@ -1159,8 +1229,10 @@ ul.nav.navbar-nav li {
   height: .95rem;
   padding-top: .3rem;
   background: #262831;
-  li{
-    a{text-decoration: none;}
+  li {
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -1187,6 +1259,12 @@ ul.nav.navbar-nav li {
   display: block;
   width: 100%;
   font-size: .27rem;
+  .bg_red {
+    background-color: #9e323d;
+  }
+  .bg_green {
+    background-color: #00a867;
+  }
 }
 
 .t_con > div {
@@ -1210,7 +1288,6 @@ ul.nav.navbar-nav li {
   height: .57rem;
   color: #fff;
   border-radius: .1rem;
-  background: #9e323d;
   border: none;
 }
 
@@ -1270,35 +1347,86 @@ ul.nav.navbar-nav li {
   text-align: center;
   height: 1.01rem;
 }
-.t_con_b .t_data h5{
+
+.t_con_b .t_data h5 {
   font-size: .24rem;
   line-height: .4rem;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-.t_data{
+
+.t_data {
   padding-bottom: .12rem;
   height: 1rem;
 }
+
 .t_data li {
   float: left;
   width: 33.33333%
 }
-.t_data li div{
-  width:100%;
-  height:.8rem;
-  margin-top:.1rem;
+
+.t_data li div {
+  width: 100%;
+  height: .8rem;
+  margin-top: .1rem;
   margin-bottom: .1rem;
   border-right: 1px solid #E6E6E7;
 }
-.t_data li:last-child div{
-  border:none;
+
+.t_data li:last-child div {
+  border: none;
 }
-.chart{
-  width:99.5%;
+
+.chart {
+  width: 99.5%;
   height: 2.6rem;
-  border:2px solid #DBDBDB;
-  margin:0 auto;
+  border: 2px solid #DBDBDB;
+  margin: 0 auto;
 }
-
-
+/******移动端底部*******/
+#notice_m{
+  position: fixed;
+  bottom:1.02rem;
+  width:100%;
+  height: .73rem;
+  padding: .18rem .18rem 0;
+  color: #262831;
+  font-size: .28rem;
+  background: #fff9df;
+  img{
+    width:.25rem;
+    height: .23rem;
+    margin-top: -0.05rem;
+  }
+}
+#footer_m{
+  position: fixed;
+  bottom: 0;
+  height:1.02rem;
+  width: 100%;
+  background: #fff;
+  li{
+    list-style: none;
+    float: left;
+    width: 25%;height: 1.25rem;
+    padding: .1rem .35rem;
+    img{
+      width: .5rem;
+      height: .5rem;
+      margin-left: .31rem;
+    }
+    h3{
+      width: 100%;
+      padding:.06rem 0 0 0;
+      margin: 0;
+      color: #6F6F6F;
+      font-size: .28rem;
+    }
+  }
+  li.active h3{
+    color: #9F343F;
+  }
+  li:hover{
+    cursor: pointer;
+  }
+}

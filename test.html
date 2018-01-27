@@ -1,43 +1,81 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Bootstrap 实例 - 轮播（Carousel）插件的标题</title>
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>加载头像</title>
+    <meta name="generator" content="Studio 3 http://aptana.com/">
+    <meta name="author" content="anjor">
+    <!-- Date: 2011-11-15 -->
+    <style type="text/css">
+        * { margin: 0; padding: 0;}
+    </style>
+    <script type="text/javascript">
+        var EventUtil = {
+            addHandler: function(elment, type, handler){
+                if(window.addEventListener){
+                    elment.addEventListener(type, handler);
+                }else{
+                    elment.attachEvent("on"+type, handler);
+                }
+
+            },
+            getEvent: function(event){
+                return event ? event : window.event;
+            },
+            preventDefault : function(event){
+                if(event.preventDefault){
+                    event.preventDefault();
+                }else{
+                    event.returnValue = false;
+                }
+            },
+            getTarget : function(event){
+                if(event.target){
+                    return event.target;
+                }else{
+                    return event.srcElement;
+                }
+            }
+        }
+    </script>
 </head>
 <body>
 
-<div id="myCarousel" class="carousel slide">
-    <!-- 轮播（Carousel）指标 -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- 轮播（Carousel）项目 -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="/wp-content/uploads/2014/07/slide1.png" alt="First slide">
-            <div class="carousel-caption">标题 1</div>
-        </div>
-        <div class="item">
-            <img src="/wp-content/uploads/2014/07/slide2.png" alt="Second slide">
-            <div class="carousel-caption">标题 2</div>
-        </div>
-        <div class="item">
-            <img src="/wp-content/uploads/2014/07/slide3.png" alt="Third slide">
-            <div class="carousel-caption">标题 3</div>
-        </div>
-    </div>
-    <!-- 轮播（Carousel）导航 -->
-    <a class="carousel-control left" href="#myCarousel"
-       data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel"
-       data-slide="next">&rsaquo;</a>
-    <span></span>
-</div>
+<select id="changeheadPic">
+    <option value="0" imgsrc="img/icon-1.png" ahref="javascript:void(0)">-请选择头像-</option>
+    <option value="1" imgsrc="icon-1.png" ahref="icon-1.png">头像1</option>
+    <option value="2" imgsrc="icon-1.png" ahref="http://www.baidu.com">头像2</option>
+    <option value="3" imgsrc="icon-1.png" ahref="http://www.qq.com">头像3</option>
+    <option value="4" imgsrc="http://video.kaku.tv/static/images/sjhd/gpic8.jpg" ahref="http://www.google.com">头像4</option>
+    <option value="5" imgsrc="http://video.kaku.tv/static/images/sjhd/gpic6.jpg" ahref="http://www.sina.com">头像5</option>
+    <option value="6" imgsrc="http://video.kaku.tv/static/images/sjhd/mxddp_03.jpg" ahref="http://www.163.com">头像6</option>
+    <option value="6" imgsrc="http://www.lapland.name/usr/uploads/2011/01/507571484.jpg" ahref="http://www.163.com">头像7</option>
+</select>
+<a href="javascript:void(0)" id="headPic" style="position: relative; width: 50px; height: 50px; display: block; overflow:hidden;"><img src="http://video.kaku.tv/static/images/loading.gif" id="loadingPic" style="position: absolute; left: 50%; z-index: 100; top: 50%; margin: -8px 0 0 -8px; display: none;"><img src="http://video.kaku.tv/static/images/face50.jpg" style="position: absolute;" width="50" height="50"></a>
 
+<script>
+    window.onload = function(){
+        var oSelectPic = document.getElementById("changeheadPic");
+        var oaPic = document.getElementById("headPic");
+        var loadPic = document.getElementById("loadingPic");
+        var oChangeImg = oaPic.getElementsByTagName("img")[1];
+        var option = null;
+        EventUtil.addHandler(oSelectPic,"change", function(event){
+            loadPic.style.display = "block";
+            var oNewImg = new Image();
+            EventUtil.addHandler(oNewImg, "load", function(){
+                loadPic.style.display = "none";
+                oChangeImg.src = oNewImg.src;
+                oNewImg = null;
+            });
+            option = oSelectPic.options[oSelectPic.selectedIndex];
+            oNewImg.src = option.getAttribute("imgsrc");
+            oaPic.href = option.getAttribute("ahref");
+            option = null;
+        });
+    }
+
+</script>
 </body>
 </html>

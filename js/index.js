@@ -10,6 +10,15 @@ $(document).ready(function () {
         }
     });
 });
+/********* 语言选择 ***********/
+/*$(document).ready(function (e) {
+    $("#lang-list li a").click(
+        function () {
+            let txt=$(this).innerHTML;
+            console.log(txt);
+        }
+    );
+})*/
 
 /******交易表格头部动效******/
 
@@ -35,13 +44,65 @@ $(document).ready(function () {
 // })();
 
 /***** PC手机动效 ****/
+/*$(document).ready(function () {
+     $(".phone").mouseout(function () {
+        $(this).removeClass("animated rubberBand");
+    });
+    $(".fuwu-1").mouseout(function () {
+        $(this).removeClass("animated zoomIn");
+    });
+    $(".fuwu-2").mouseout(function () {
+        $(this).removeClass("animated zoomInUp");
+    });
+    $(".fuwu-3").mouseout(function () {
+        $(this).removeClass("animated fadeInLeft");
+    });
+    $(".fuwu-4").mouseout(function () {
+        $(this).removeClass("animated fadeInRight");
+    });
+    $(".fuwu-5 img").mouseout(function () {
+        $(this).removeClass("animated flip");
+    });
+});*/
 $(document).ready(function () {
     $(".phone").mouseenter(function () {
         $(this).addClass("animated rubberBand");
     });
-    $(".phone").mouseout(function () {
+    $(".fuwu-1").mouseenter(function () {
+        $(this).addClass("animated zoomIn");
+    });
+    $(".fuwu-2").mouseenter(function () {
+        $(this).addClass("animated zoomInUp");
+    });
+    $(".fuwu-3").mouseenter(function () {
+        $(this).addClass("animated fadeInLeft");
+    });
+    $(".fuwu-4").mouseenter(function () {
+        $(this).addClass("animated fadeInRight");
+    });
+    $(".fuwu-5 img").mouseenter(function () {
+        $(this).addClass("animated flip");
+    });
+
+   /* $(".phone").mouseout(function () {
         $(this).removeClass("animated rubberBand");
     });
+    $(".fuwu-1").mouseout(function () {
+        $(this).removeClass("animated zoomIn");
+    });
+    $(".fuwu-2").mouseout(function () {
+        $(this).removeClass("animated zoomInUp");
+    });
+    $(".fuwu-3").mouseout(function () {
+        $(this).removeClass("animated fadeInLeft");
+    });
+    $(".fuwu-4").mouseout(function () {
+        $(this).removeClass("animated fadeInRight");
+    });
+    $(".fuwu-5 img").mouseout(function () {
+        $(this).removeClass("animated flip");
+    });*/
+
 });
 /********** 手机端chart显示隐藏 **********/
 $(document).ready(function () {

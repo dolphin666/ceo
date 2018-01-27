@@ -28,21 +28,21 @@
     <div class="top">
         <ul class="top_left  hidden-xs hidden-sm">
             <li class="zl">金融级别安全交易所</li>
-            <li>
+            <!--<li>
                 <img src="img/中国国旗.png" alt="">
-            </li>
-            <li><!--TODO 1-->
-                <div class="btn-group">
+            </li>-->
+            <li>
+                <div class="btn-group"><!-- TODO:1-->
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                        CN <span class="caret"></span>
+                        语言选择 <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">简体中文</a></li>
-                        <li><a href="#">En</a></li>
-                        <li><a href="#">韩语</a></li>
-                        <li role="separator" class="divider"></li>
-                        <!-- <li><a href="#">Separated link</a></li> -->
+                    <ul id="lang-list" class="dropdown-menu lang-list">
+                        <li><a href="" title="简体中文"><i></i> <span>CN</span></a></li>
+                        <li><a href="" title="繁体中文"><i></i> <span>HK</span></a></li>
+                        <li><a href="" title="英语"><i></i> <span>EN</span></a></li>
+                        <li><a href="" title="日语"><i></i> <span>JP</span></a></li>
+                        <li><a href="" title="韩语"><i></i> <span>KR</span></a></li>
                     </ul>
                 </div>
             </li>
@@ -226,7 +226,7 @@
 
 </div>
 
-<!--交易表格PC-->
+<!--PC端图表-->
 <div class="swipe_nav_q hidden-sm hidden-xs">
     <div class="row swipe_menu nav nav-tabs" role="tablist">
         <div class="col-md-2 hidden-xs hidden-sm"></div>
@@ -566,206 +566,904 @@
 <!-- 移动端图表 -->
 <div id="jy_table_m" class="hidden-lg hidden-md">
     <ul class="t_title" role="tablist">
-        <li  role="presentation" class="active">
+        <li role="presentation" class="active">
             <a href="#one_m" role="tab"
-                                                                                  data-toggle="tab" aria-controls="one_m" href="#one_m"><h3>对CYN交易</h3></a>
+               data-toggle="tab" aria-controls="one_m" href="#one_m"><h3>对CYN交易</h3></a>
         </li>
-        <li  role="presentation">
+        <li role="presentation">
             <a href="#two_m" role="tab"
-                                                                                  data-toggle="tab" aria-controls="two_m" href="#two_m"><h3>对BTC交易</h3></a>
+               data-toggle="tab" aria-controls="two_m" href="#two_m"><h3>对BTC交易</h3></a>
         </li>
-        <li  role="presentation">
+        <li role="presentation">
             <a href="#three_m" role="tab"
-                                                                                  data-toggle="tab" aria-controls="three_m" href="#three_m"><h3>对CEO交易</h3></a>
+               data-toggle="tab" aria-controls="three_m" href="#three_m"><h3>对CEO交易</h3></a>
         </li>
-        <li  role="presentation">
+        <li role="presentation">
             <a href="#four_m" role="tab"
-                                                                                  data-toggle="tab" aria-controls="four_m" href="#four_m"><h3>对HKD交易</h3></a>
+               data-toggle="tab" aria-controls="four_m" href="#four_m"><h3>对HKD交易</h3></a>
         </li>
     </ul>
     <div class="t_con tab-content ">
-        <div role="tabpanel" class="active tab-pane t_con_down"id="one_m">
-            <ul class="t_con_h">
-                <li>
-                    <img src="img/btc_m.png" alt="BTC">
-                </li>
-                <li>
-                    <p>
-                        <b class="font">1BTC</b>
-                        <b class="font_red">CYN79100.00</b>
-                    </p>
-                    <p>
-                        <span>量:1075.32</span>
-                        <span>&yen;79100.00</span>
-                    </p>
-                </li>
-                <li>
-                    <button class="change_btn">+0.41%</button>
-                </li>
-                <li>
-                    <button class="trade_btn">去交易</button>
-                </li>
-            </ul>
-            <div class="t_con_b">
-                <ul class="t_data">
+        <div role="tabpanel" class="active tab-pane t_con_down" id="one_m">
+            <div>
+                <ul class="t_con_h">
                     <li>
-                        <div>
-                            <h5>最高</h5>
-                            <b>CYN13500.00</b>
-                        </div>
+                        <img src="img/btc_m.png" alt="BTC">
                     </li>
                     <li>
-                        <div>
-                            <h5>最低</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <p>
+                            <b class="font">1BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
                     </li>
                     <li>
-                        <div>
-                            <h5>成交量</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
                     </li>
                 </ul>
-                <div class="chart"></div>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">1BTC</b>
+                            <b class="font_green">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_green">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">1BTC</b>
+                            <b class="font_green">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_green">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">1BTC</b>
+                            <b class="font_green">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_green">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">1BTC</b>
+                            <b class="font_green">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_green">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">1BTC</b>
+                            <b class="font_green">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_green">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">1BTC</b>
+                            <b class="font_green">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_green">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
             </div>
         </div>
-        <div role="tabpanel" class="tab-pane t_con_down"id="two_m">
-            <ul class="t_con_h">
-                <li>
-                    <img src="img/btc_m.png" alt="BTC">
-                </li>
-                <li>
-                    <p>
-                        <b class="font">2BTC</b>
-                        <b class="font_red">CYN79100.00</b>
-                    </p>
-                    <p>
-                        <span>量:1075.32</span>
-                        <span>&yen;79100.00</span>
-                    </p>
-                </li>
-                <li>
-                    <button class="change_btn">+0.41%</button>
-                </li>
-                <li>
-                    <button class="trade_btn">去交易</button>
-                </li>
-            </ul>
-            <div class="t_con_b">
-                <ul class="t_data">
+        <div role="tabpanel" class="tab-pane t_con_down" id="two_m">
+            <div>
+                <ul class="t_con_h">
                     <li>
-                        <div>
-                            <h5>最高</h5>
-                            <b>CYN13500.00</b>
-                        </div>
+                        <img src="img/btc_m.png" alt="BTC">
                     </li>
                     <li>
-                        <div>
-                            <h5>最低</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <p>
+                            <b class="font">2BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
                     </li>
                     <li>
-                        <div>
-                            <h5>成交量</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
                     </li>
                 </ul>
-                <div class="chart"></div>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">2BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">2BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">2BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
             </div>
         </div>
-        <div role="tabpanel" class="tab-pane t_con_down"id="three_m">
-            <ul class="t_con_h">
-                <li>
-                    <img src="img/btc_m.png" alt="BTC">
-                </li>
-                <li>
-                    <p>
-                        <b class="font">3BTC</b>
-                        <b class="font_red">CYN79100.00</b>
-                    </p>
-                    <p>
-                        <span>量:1075.32</span>
-                        <span>&yen;79100.00</span>
-                    </p>
-                </li>
-                <li>
-                    <button class="change_btn">+0.41%</button>
-                </li>
-                <li>
-                    <button class="trade_btn">去交易</button>
-                </li>
-            </ul>
-            <div class="t_con_b">
-                <ul class="t_data">
+        <div role="tabpanel" class="tab-pane t_con_down" id="three_m">
+            <div>
+                <ul class="t_con_h">
                     <li>
-                        <div>
-                            <h5>最高</h5>
-                            <b>CYN13500.00</b>
-                        </div>
+                        <img src="img/btc_m.png" alt="BTC">
                     </li>
                     <li>
-                        <div>
-                            <h5>最低</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
                     </li>
                     <li>
-                        <div>
-                            <h5>成交量</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
                     </li>
                 </ul>
-                <div class="chart"></div>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
             </div>
         </div>
-        <div role="tabpanel" class="tab-pane t_con_down"id="four_m">
-            <ul class="t_con_h">
-                <li>
-                    <img src="img/btc_m.png" alt="BTC">
-                </li>
-                <li>
-                    <p>
-                        <b class="font">4BTC</b>
-                        <b class="font_red">CYN79100.00</b>
-                    </p>
-                    <p>
-                        <span>量:1075.32</span>
-                        <span>&yen;79100.00</span>
-                    </p>
-                </li>
-                <li>
-                    <button class="change_btn">+0.41%</button>
-                </li>
-                <li>
-                    <button class="trade_btn">去交易</button>
-                </li>
-            </ul>
-            <div class="t_con_b">
-                <ul class="t_data">
+        <div role="tabpanel" class="tab-pane t_con_down" id="four_m">
+            <div>
+                <ul class="t_con_h">
                     <li>
-                        <div>
-                            <h5>最高</h5>
-                            <b>CYN13500.00</b>
-                        </div>
+                        <img src="img/btc_m.png" alt="BTC">
                     </li>
                     <li>
-                        <div>
-                            <h5>最低</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
                     </li>
                     <li>
-                        <div>
-                            <h5>成交量</h5>
-                            <b>CYN9600.00</b>
-                        </div>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
                     </li>
                 </ul>
-                <div class="chart"></div>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <div>
+                <ul class="t_con_h">
+                    <li>
+                        <img src="img/btc_m.png" alt="BTC">
+                    </li>
+                    <li>
+                        <p>
+                            <b class="font">3BTC</b>
+                            <b class="font_red">CYN79100.00</b>
+                        </p>
+                        <p>
+                            <span>量:1075.32</span>
+                            <span>&yen;79100.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <button class="change_btn bg_red">+0.41%</button>
+                    </li>
+                    <li>
+                        <button class="trade_btn">去交易</button>
+                    </li>
+                </ul>
+                <div class="t_con_b">
+                    <ul class="t_data">
+                        <li>
+                            <div>
+                                <h5>最高</h5>
+                                <b>CYN13500.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>最低</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>成交量</h5>
+                                <b>CYN9600.00</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chart"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -797,11 +1495,19 @@
     <!-- <div class="Service"> -->
     <div>
         <div class="fuwu">
-            <div class="fuwu-1 fuwu-con"><img src="img/" alt=""></div>
-            <div class="fuwu-2 fuwu-con"><img src="img/" alt=""></div>
-            <div class="fuwu-3 fuwu-con"><img src="img/" alt=""></div>
-            <div class="fuwu-4 fuwu-con"><img src="img/" alt=""></div>
-            <div class="fuwu-5"></div>
+            <div class="fuwu-1"></div>
+            <div class="fuwu-2"></div>
+            <div class="fuwu-3"></div>
+            <div class="fuwu-4"></div>
+            <div class="fuwu-5"><img src="img/flag_logo.png" alt=""></div>
+            <p class="text-center">专业金融安全级别 <br>
+                重金多重安全防护</p>
+            <p class="text-center">享受舒适体验 <br>
+                打造亚洲高端品牌</p>
+            <p class="text-center">CEO交易所 <br>
+                树立良好信誉口碑</p>
+            <p class="text-center">专业客服 <br>
+                4年来从未间断</p>
         </div>
         <!--<img src="img/swipe_logo_01.png" alt="" class="swipe_logo_02">-->
     </div>
@@ -1120,6 +1826,30 @@
         </div>
     </div>
 </footer>
+<!--移动端底部-->
+<div id="notice_m" class="hidden-md hidden-lg">
+    <img src="img/notice_m.png" alt="公告">
+    <span>网站公告：关于开放UBTC和XRP提币业务的公告</span>
+</div>
+<ul id="footer_m" class="hidden-lg hidden-md">
+    <li class="active">
+        <img src="img/return_home.png" alt="返回首页">
+        <h3>返回首页</h3>
+    </li>
+    <li>
+        <img src="img/jyzx_m.png" alt="交易中心">
+        <h3>交易中心</h3>
+    </li>
+    <li>
+        <img src="img/caiwu_m.png" alt="财务">
+        <h3>财务中心</h3>
+    </li>
+    <li>
+        <img src="img/grzx.png" alt="个人中心">
+        <h3>个人中心</h3>
+    </li>
+
+</ul>
 <script src="assets/jquery/jquery.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/swipe.js"></script>
